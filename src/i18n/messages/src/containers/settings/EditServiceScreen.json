@@ -26,15 +26,33 @@
     }
   },
   {
+<<<<<<< HEAD
     "id": "settings.service.form.disableHibernation",
     "defaultMessage": "!!!Disable hibernation",
+=======
+    "id": "settings.service.form.enableHibernation",
+    "defaultMessage": "!!!Enable hibernation",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
       "line": 36,
-      "column": 22
+      "column": 21
     },
     "end": {
       "line": 39,
+      "column": 3
+    }
+  },
+  {
+    "id": "settings.service.form.enableNotification",
+    "defaultMessage": "!!!Enable Notifications",
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+    "file": "src/containers/settings/EditServiceScreen.js",
+    "start": {
+      "line": 40,
+      "column": 22
+    },
+    "end": {
+      "line": 43,
       "column": 3
     }
   },
@@ -139,6 +157,7 @@
     },
     "end": {
       "line": 71,
+<<<<<<< HEAD
       "column": 3
     }
   },
@@ -178,6 +197,8 @@
     },
     "end": {
       "line": 83,
+=======
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   },
@@ -186,11 +207,19 @@
     "defaultMessage": "!!!Use Proxy",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
+<<<<<<< HEAD
       "line": 84,
       "column": 15
     },
     "end": {
       "line": 87,
+=======
+      "line": 72,
+      "column": 15
+    },
+    "end": {
+      "line": 75,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   },
@@ -199,11 +228,19 @@
     "defaultMessage": "!!!Proxy Host/IP",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
+<<<<<<< HEAD
       "line": 88,
       "column": 13
     },
     "end": {
       "line": 91,
+=======
+      "line": 76,
+      "column": 13
+    },
+    "end": {
+      "line": 79,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   },
@@ -212,11 +249,19 @@
     "defaultMessage": "!!!Port",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
+<<<<<<< HEAD
       "line": 92,
       "column": 13
     },
     "end": {
       "line": 95,
+=======
+      "line": 80,
+      "column": 13
+    },
+    "end": {
+      "line": 83,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   },
@@ -225,11 +270,19 @@
     "defaultMessage": "!!!User",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
+<<<<<<< HEAD
       "line": 96,
       "column": 13
     },
     "end": {
       "line": 99,
+=======
+      "line": 84,
+      "column": 13
+    },
+    "end": {
+      "line": 87,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   },
@@ -238,11 +291,19 @@
     "defaultMessage": "!!!Password",
     "file": "src/containers/settings/EditServiceScreen.js",
     "start": {
+<<<<<<< HEAD
       "line": 100,
       "column": 17
     },
     "end": {
       "line": 103,
+=======
+      "line": 88,
+      "column": 17
+    },
+    "end": {
+      "line": 91,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   }

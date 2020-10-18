@@ -5,9 +5,18 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import classnames from 'classnames';
 import { SortableElement } from 'react-sortable-hoc';
+import injectSheet from 'react-jss';
+import ms from 'ms';
 
+import { observable, autorun } from 'mobx';
 import ServiceModel from '../../../models/Service';
+<<<<<<< HEAD
 import { ctrlKey } from '../../../environment';
+=======
+import { isDevMode, ctrlKey, cmdKey } from '../../../environment';
+
+const IS_SERVICE_DEBUGGING_ENABLED = (localStorage.getItem('debug') || '').includes('Franz:Service');
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 const { Menu } = remote;
 
@@ -50,9 +59,38 @@ const messages = defineMessages({
   },
 });
 
-@observer
-class TabItem extends Component {
+const styles = {
+  pollIndicator: {
+    position: 'absolute',
+    bottom: 2,
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    background: 'gray',
+    transition: 'background 0.5s',
+  },
+  pollIndicatorPoll: {
+    left: 2,
+  },
+  pollIndicatorAnswer: {
+    left: 14,
+  },
+  polled: {
+    background: 'yellow !important',
+    transition: 'background 0.1s',
+  },
+  pollAnswered: {
+    background: 'green !important',
+    transition: 'background 0.1s',
+  },
+  stale: {
+    background: 'red !important',
+  },
+};
+
+@injectSheet(styles) @observer class TabItem extends Component {
   static propTypes = {
+    classes: PropTypes.object.isRequired,
     service: PropTypes.instanceOf(ServiceModel).isRequired,
     clickHandler: PropTypes.func.isRequired,
     shortcutIndex: PropTypes.number.isRequired,
@@ -71,8 +109,33 @@ class TabItem extends Component {
     intl: intlShape,
   };
 
+  @observable isPolled = false;
+
+  @observable isPollAnswered = false;
+
+  componentDidMount() {
+    const { service } = this.props;
+
+    if (IS_SERVICE_DEBUGGING_ENABLED) {
+      autorun(() => {
+        if (Date.now() - service.lastPoll < ms('0.2s')) {
+          this.isPolled = true;
+
+          setTimeout(() => { this.isPolled = false; }, ms('1s'));
+        }
+
+        if (Date.now() - service.lastPollAnswer < ms('0.2s')) {
+          this.isPollAnswered = true;
+
+          setTimeout(() => { this.isPollAnswered = false; }, ms('1s'));
+        }
+      });
+    }
+  }
+
   render() {
     const {
+      classes,
       service,
       clickHandler,
       shortcutIndex,
@@ -97,6 +160,7 @@ class TabItem extends Component {
     }, {
       label: intl.formatMessage(messages.reload),
       click: reload,
+      accelerator: `${cmdKey}+R`,
     }, {
       label: intl.formatMessage(messages.edit),
       click: () => openSettings({
@@ -153,6 +217,7 @@ class TabItem extends Component {
     return (
       <li
         className={classnames({
+          [classes.stale]: IS_SERVICE_DEBUGGING_ENABLED && service.lostRecipeConnection,
           'tab-item': true,
           'is-active': service.isActive,
           'has-custom-icon': service.hasCustomIcon,
@@ -168,6 +233,24 @@ class TabItem extends Component {
           alt=""
         />
         {notificationBadge}
+        {IS_SERVICE_DEBUGGING_ENABLED && (
+          <>
+            <div
+              className={classnames({
+                [classes.pollIndicator]: true,
+                [classes.pollIndicatorPoll]: true,
+                [classes.polled]: this.isPolled,
+              })}
+            />
+            <div
+              className={classnames({
+                [classes.pollIndicator]: true,
+                [classes.pollIndicatorAnswer]: true,
+                [classes.pollAnswered]: this.isPollAnswered,
+              })}
+            />
+          </>
+        )}
       </li>
     );
   }

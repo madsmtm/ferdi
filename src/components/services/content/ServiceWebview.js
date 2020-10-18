@@ -15,6 +15,7 @@ class ServiceWebview extends Component {
     service: PropTypes.instanceOf(ServiceModel).isRequired,
     setWebviewReference: PropTypes.func.isRequired,
     detachService: PropTypes.func.isRequired,
+    isSpellcheckerEnabled: PropTypes.bool.isRequired,
   };
 
   @observable webview = null;
@@ -55,6 +56,7 @@ class ServiceWebview extends Component {
     const {
       service,
       setWebviewReference,
+      isSpellcheckerEnabled,
     } = this.props;
 
     const preloadScript = path.join(__dirname, '../../../', 'webview', 'recipe.js');
@@ -69,8 +71,13 @@ class ServiceWebview extends Component {
         }}
         autosize
         src={service.url}
+<<<<<<< HEAD
         preload={preloadScript}
         partition={`persist:service-${service.id}`}
+=======
+        preload="./webview/recipe.js"
+        partition={service.partition}
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         onDidAttach={() => {
           setWebviewReference({
             serviceId: service.id,
@@ -81,6 +88,7 @@ class ServiceWebview extends Component {
         useragent={service.userAgent}
         disablewebsecurity={service.recipe.disablewebsecurity ? true : undefined}
         allowpopups
+        webpreferences={`spellcheck=${isSpellcheckerEnabled ? 1 : 0}`}
       />
     );
   }

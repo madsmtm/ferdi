@@ -38,6 +38,13 @@ export default (params) => {
           console.error(e);
           event.sender.send('autoUpdate', { error: true });
         }
+<<<<<<< HEAD
+=======
+      } catch (e) {
+        console.log('debugging test');
+        console.log(e);
+        // params.mainWindow.webContents.send('autoUpdate', { error: true });
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
     });
 

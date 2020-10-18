@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { webFrame } from 'electron';
 import { SPELLCHECKER_LOCALES } from '../i18n/languages';
 import setupContextMenu from './contextMenu';
@@ -40,13 +41,48 @@ export default async function initialize(languages = ['en-us']) {
   } catch (err) {
     console.error(err);
     return false;
+=======
+import {
+  remote,
+} from 'electron';
+import { SPELLCHECKER_LOCALES } from '../i18n/languages';
+import { isMac } from '../environment';
+
+const debug = require('debug')('Franz:spellchecker');
+
+const webContents = remote.getCurrentWebContents();
+const [defaultLocale] = webContents.session.getSpellCheckerLanguages();
+debug('Spellchecker default locale is', defaultLocale);
+
+export function getSpellcheckerLocaleByFuzzyIdentifier(identifier) {
+  const locales = Object.keys(SPELLCHECKER_LOCALES).filter(key => key.toLocaleLowerCase() === identifier.toLowerCase() || key.split('-')[0] === identifier.toLowerCase());
+
+  if (locales.length >= 1) {
+    return locales[0];
   }
+
+  return null;
 }
 
-export function isEnabled() {
-  return _isEnabled;
-}
+export function switchDict(locale) {
+  if (isMac) {
+    debug('Ignoring dictionary changes on macOS');
+    return;
+  }
 
+  debug('Setting spellchecker locale to', locale);
+
+  const locales = [];
+  const foundLocale = getSpellcheckerLocaleByFuzzyIdentifier(locale);
+
+  if (foundLocale) {
+    locales.push(foundLocale);
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+  }
+
+  locales.push(defaultLocale, 'de');
+
+<<<<<<< HEAD
 export function disable() {
   if (isEnabled()) {
     // TODO: How to disable build-in spellchecker?
@@ -61,4 +97,7 @@ export function getSpellcheckerLocaleByFuzzyIdentifier(identifier) {
   }
 
   return null;
+=======
+  webContents.session.setSpellCheckerLanguages(locales);
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 }

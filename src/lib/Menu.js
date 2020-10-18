@@ -139,6 +139,10 @@ const menuItems = defineMessages({
     id: 'menu.view.lockFerdi',
     defaultMessage: '!!!Lock Ferdi',
   },
+  reloadTodos: {
+    id: 'menu.view.reloadTodos',
+    defaultMessage: '!!!Reload ToDos',
+  },
   minimize: {
     id: 'menu.window.minimize',
     defaultMessage: '!!!Minimize',
@@ -855,7 +859,12 @@ export default class FranzMenu {
         label: intl.formatMessage(menuItems.toggleServiceDevTools),
         accelerator: `${cmdKey}+Shift+Alt+I`,
         click: () => {
+<<<<<<< HEAD
           this.actions.service.openDevToolsForActiveService();
+=======
+          const webview = document.querySelector('#todos-panel webview');
+          if (webview) this.actions.todos.openDevTools();
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         enabled: this.stores.user.isLoggedIn && this.stores.services.enabled.length > 0,
       });
@@ -892,6 +901,7 @@ export default class FranzMenu {
         accelerator: `${cmdKey}+Shift+R`,
         click: () => {
           window.location.reload();
+<<<<<<< HEAD
         },
       }, {
         type: 'separator',
@@ -946,6 +956,26 @@ export default class FranzMenu {
     tpl.unshift({
       label: isMac ? app.name : intl.formatMessage(menuItems.file),
       accelerator: 'Alt+F',
+=======
+        }
+      },
+    }, {
+      label: intl.formatMessage(menuItems.reloadFranz),
+      accelerator: `${cmdKey}+Shift+R`,
+      click: () => {
+        window.location.reload();
+      },
+    }, {
+      label: intl.formatMessage(menuItems.reloadTodos),
+      accelerator: `${cmdKey}+Shift+Alt+R`,
+      click: () => {
+        this.actions.todos.reload();
+      },
+    });
+
+    tpl.unshift({
+      label: isMac ? app.name : intl.formatMessage(menuItems.file),
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       submenu: [
         {
           label: intl.formatMessage(menuItems.about),

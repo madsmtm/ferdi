@@ -20,6 +20,7 @@ import Select from '../../ui/Select';
 import PremiumFeatureContainer from '../../ui/PremiumFeatureContainer';
 import LimitReachedInfobox from '../../../features/serviceLimit/components/LimitReachedInfobox';
 import { serviceLimitStore } from '../../../features/serviceLimit';
+import { isMac } from '../../../environment';
 
 import { isMac } from '../../../environment';
 
@@ -96,9 +97,15 @@ const messages = defineMessages({
     id: 'settings.service.form.isMutedInfo',
     defaultMessage: '!!!When disabled, all notification sounds and audio playback are muted',
   },
+<<<<<<< HEAD
   disableHibernationInfo: {
     id: 'settings.service.form.disableHibernationInfo',
     defaultMessage: '!!!You currently have hibernation enabled but you can disable hibernation for individual services using this option.',
+=======
+  isHibernationEnabledInfo: {
+    id: 'settings.service.form.isHibernatedEnabledInfo',
+    defaultMessage: '!!!When enabled, a service will be shut down after a period of time to save system resources.',
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   },
   headlineNotifications: {
     id: 'settings.service.form.headlineNotifications',
@@ -373,6 +380,7 @@ export default @observer class EditServiceForm extends Component {
                 <div className="settings__settings-group">
                   <h3>{intl.formatMessage(messages.headlineGeneral)}</h3>
                   <Toggle field={form.$('isEnabled')} />
+<<<<<<< HEAD
                   {isHibernationFeatureActive && (
                     <>
                       <Toggle field={form.$('disableHibernation')} />
@@ -392,6 +400,12 @@ export default @observer class EditServiceForm extends Component {
                       </>
                     )
                   }
+=======
+                  <Toggle field={form.$('isHibernationEnabled')} />
+                  <p className="settings__help">
+                    {intl.formatMessage(messages.isHibernationEnabledInfo)}
+                  </p>
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                 </div>
               </div>
               <div className="service-icon">
@@ -409,7 +423,11 @@ export default @observer class EditServiceForm extends Component {
                 gaEventInfo={{ category: 'User', event: 'upgrade', label: 'spellchecker' }}
               >
                 <div className="settings__settings-group">
+<<<<<<< HEAD
                   <Select field={form.$('spellcheckerLanguage')} multiple />
+=======
+                  <Select field={form.$('spellcheckerLanguage')} />
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                 </div>
               </PremiumFeatureContainer>
             )}

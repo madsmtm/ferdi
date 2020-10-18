@@ -1,19 +1,39 @@
+<<<<<<< HEAD
 version: build-{build}
 branches:
   only:
     - release
 skip_tags: true
 skip_branch_with_pr: true
+=======
+environment:
+  GH_TOKEN:
+    secure: LiO1Z/i16UV5YyElROSUykQqpJowSMK86I7Nw4G/NMa0q5yNA7EsUqEiJUL+OG01
+  CSC_LINK:
+    secure: NEYFWgUIAB//y2GR4AJOaegwuNjkxyNsdDf5A40dYovebTUsnIB5k4GCbU3I6JKW9iwH2ldU7Z+QawfyFerNgw==
+  CSC_KEY_PASSWORD:
+    secure: t8ypNTPKTmvRfd3hHA4aMOtC5KOFqOw3AsKhpU7140Q=
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 cache:
   - '%APPDATA%\npm-cache'
   - node_modules
 
+image: Visual Studio 2019
+
 install:
+<<<<<<< HEAD
   - appveyor-retry git submodule update --init --recursive
   - ps: Install-Product node 10
   - cd recipes && npm install && npm run package && cd ..
   - appveyor-retry npx lerna bootstrap
+=======
+  - ps: Install-Product node 11
+  - npx lerna bootstrap
+
+cache:
+ - '%APPDATA%\npm-cache'
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 before_build:
   - npm run lint && npm test

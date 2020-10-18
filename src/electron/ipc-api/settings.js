@@ -6,7 +6,11 @@ export default (params) => {
 
     params.mainWindow.webContents.send('appSettings', {
       type,
+<<<<<<< HEAD
       data: cleanData,
+=======
+      data: params.settings[type].allSerialized,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     });
   });
 

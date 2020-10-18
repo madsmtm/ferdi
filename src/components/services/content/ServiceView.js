@@ -24,6 +24,7 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
     edit: PropTypes.func.isRequired,
     enable: PropTypes.func.isRequired,
     isActive: PropTypes.bool,
+<<<<<<< HEAD
     stores: PropTypes.shape({
       settings: PropTypes.instanceOf(SettingsStore).isRequired,
     }).isRequired,
@@ -32,6 +33,10 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
         setHibernation: PropTypes.func.isRequired,
       }).isRequired,
     }).isRequired,
+=======
+    upgrade: PropTypes.func.isRequired,
+    isSpellcheckerEnabled: PropTypes.bool.isRequired,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   };
 
   static defaultProps = {
@@ -131,7 +136,12 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
       reload,
       edit,
       enable,
+<<<<<<< HEAD
       stores,
+=======
+      upgrade,
+      isSpellcheckerEnabled,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     } = this.props;
 
     const {
@@ -198,6 +208,7 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
                 {showNavBar && (
                   <WebControlsScreen service={service} />
                 )}
+<<<<<<< HEAD
                 <ServiceWebview
                   service={service}
                   setWebviewReference={setWebviewReference}
@@ -209,6 +220,16 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
                     reload={reload}
                   />
                 )} */}
+=======
+                {!service.isHibernating && (
+                  <ServiceWebview
+                    service={service}
+                    setWebviewReference={setWebviewReference}
+                    detachService={detachService}
+                    isSpellcheckerEnabled={isSpellcheckerEnabled}
+                  />
+                )}
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
               </>
             ) : (
               <div>

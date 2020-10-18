@@ -18,6 +18,7 @@
     "file": "src/components/services/content/Services.js",
     "start": {
       "line": 19,
+<<<<<<< HEAD
       "column": 14
     },
     "end": {
@@ -61,6 +62,12 @@
     },
     "end": {
       "line": 34,
+=======
+      "column": 14
+    },
+    "end": {
+      "line": 22,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       "column": 3
     }
   }

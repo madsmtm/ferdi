@@ -3,7 +3,6 @@ import {
   action, computed, observable,
 } from 'mobx';
 import moment from 'moment';
-import { getDoNotDisturb } from '@meetfranz/electron-notification-state';
 import AutoLaunch from 'auto-launch';
 import prettyBytes from 'pretty-bytes';
 import ms from 'ms';
@@ -27,7 +26,14 @@ import { sleep } from '../helpers/async-helpers';
 const debug = require('debug')('Ferdi:AppStore');
 
 const {
+<<<<<<< HEAD
   app, nativeTheme, screen, powerMonitor,
+=======
+  app,
+  screen,
+  powerMonitor,
+  nativeTheme,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 } = remote;
 
 const mainWindow = remote.getCurrentWindow();
@@ -61,9 +67,13 @@ export default class AppStore extends Store {
 
   @observable isOnline = navigator.onLine;
 
+<<<<<<< HEAD
   @observable authRequestFailed = false;
 
   @observable timeSuspensionStart;
+=======
+  @observable timeSuspensionStart = moment();
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
   @observable timeOfflineStart;
 
@@ -118,11 +128,19 @@ export default class AppStore extends Store {
     window.addEventListener('focus', this.actions.service.focusActiveService);
 
     // Online/Offline handling
-    window.addEventListener('online', () => { this.isOnline = true; });
-    window.addEventListener('offline', () => { this.isOnline = false; });
+    window.addEventListener('online', () => {
+      this.isOnline = true;
+    });
+    window.addEventListener('offline', () => {
+      this.isOnline = false;
+    });
 
-    mainWindow.on('enter-full-screen', () => { this.isFullScreen = true; });
-    mainWindow.on('leave-full-screen', () => { this.isFullScreen = false; });
+    mainWindow.on('enter-full-screen', () => {
+      this.isFullScreen = true;
+    });
+    mainWindow.on('leave-full-screen', () => {
+      this.isFullScreen = false;
+    });
 
 
     this.isOnline = navigator.onLine;
@@ -137,10 +155,16 @@ export default class AppStore extends Store {
     setInterval(() => this._systemDND(), ms('5s'));
 
     this.fetchDataInterval = setInterval(() => {
-      this.stores.user.getUserInfoRequest.invalidate({ immediately: true });
-      this.stores.features.featuresRequest.invalidate({ immediately: true });
-      this.stores.news.latestNewsRequest.invalidate({ immediately: true });
-    }, ms('10m'));
+      this.stores.user.getUserInfoRequest.invalidate({
+        immediately: true,
+      });
+      this.stores.features.featuresRequest.invalidate({
+        immediately: true,
+      });
+      this.stores.news.latestNewsRequest.invalidate({
+        immediately: true,
+      });
+    }, ms('60m'));
 
     // Check for updates once every 4 hours
     setInterval(() => this._checkForUpdates(), CHECK_INTERVAL);
@@ -174,7 +198,9 @@ export default class AppStore extends Store {
     // Handle deep linking (franz://)
     ipcRenderer.on('navigateFromDeepLink', (event, data) => {
       debug('Navigate from deep link', data);
-      let { url } = data;
+      let {
+        url,
+      } = data;
       if (!url) return;
 
       url = url.replace(/\/$/, '');
@@ -207,13 +233,17 @@ export default class AppStore extends Store {
     });
 
     powerMonitor.on('resume', () => {
-      debug('System resumed, last suspended on', this.timeSuspensionStart.toString());
+      debug('System resumed, last suspended on', this.timeSuspensionStart);
+      this.actions.service.resetLastPollTimer();
 
       if (this.timeSuspensionStart.add(10, 'm').isBefore(moment()) && this.stores.settings.app.get('reloadAfterResume')) {
         debug('Reloading services, user info and features');
 
-        setTimeout(() => {
-          window.location.reload();
+        setInterval(() => {
+          debug('Reload app interval is starting');
+          if (this.isOnline) {
+            window.location.reload();
+          }
         }, ms('2s'));
       }
     });
@@ -225,7 +255,11 @@ export default class AppStore extends Store {
       if (!localStorage.getItem(CATALINA_NOTIFICATION_HACK_KEY)) {
         debug('Triggering macOS Catalina notification permission trigger');
         // eslint-disable-next-line no-new
+<<<<<<< HEAD
         new window.Notification('Welcome to Ferdi 5', {
+=======
+        new window.Notification('Welcome to Franz 5', {
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
           body: 'Have a wonderful day & happy messaging.',
         });
 
@@ -251,6 +285,7 @@ export default class AppStore extends Store {
       ferdi: {
         version: app.getVersion(),
         electron: process.versions.electron,
+<<<<<<< HEAD
         installedRecipes: this.stores.recipes.all.map(recipe => ({ id: recipe.id, version: recipe.version })),
         devRecipes: this.stores.recipePreviews.dev.map(recipe => ({ id: recipe.id, version: recipe.version })),
         services: this.stores.services.all.map(service => ({
@@ -265,6 +300,24 @@ export default class AppStore extends Store {
         })),
         messages: this.stores.globalError.messages,
         workspaces: this.stores.workspaces.workspaces.map(workspace => ({ id: workspace.id, services: workspace.services })),
+=======
+        installedRecipes: this.stores.recipes.all.map(recipe => ({
+          id: recipe.id,
+          version: recipe.version,
+        })),
+        devRecipes: this.stores.recipePreviews.dev.map(recipe => ({
+          id: recipe.id,
+          version: recipe.version,
+        })),
+        services: this.stores.services.all.map(service => ({
+          id: service.id,
+          recipe: service.recipe.id,
+        })),
+        workspaces: this.stores.workspaces.workspaces.map(workspace => ({
+          id: workspace.id,
+          services: workspace.services,
+        })),
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         windowSettings: readJsonSync(path.join(app.getPath('userData'), 'window-state.json')),
         settings,
         features: this.stores.features.features,
@@ -275,7 +328,10 @@ export default class AppStore extends Store {
 
   // Actions
   @action _notify({
-    title, options, notificationId, serviceId = null,
+    title,
+    options,
+    notificationId,
+    serviceId = null,
   }) {
     if (this.stores.settings.all.app.isAppMuted) return;
 
@@ -288,15 +344,17 @@ export default class AppStore extends Store {
 
     debug('New notification', title, options);
 
-    notification.onclick = (e) => {
+    notification.onclick = () => {
       if (serviceId) {
         this.actions.service.sendIPCMessage({
           channel: `notification-onclick:${notificationId}`,
-          args: e,
+          args: {},
           serviceId,
         });
 
-        this.actions.service.setActive({ serviceId });
+        this.actions.service.setActive({
+          serviceId,
+        });
         mainWindow.show();
         if (app.mainWindow.isMinimized()) {
           mainWindow.restore();
@@ -308,7 +366,10 @@ export default class AppStore extends Store {
     };
   }
 
-  @action _setBadge({ unreadDirectMessageCount, unreadIndirectMessageCount }) {
+  @action _setBadge({
+    unreadDirectMessageCount,
+    unreadIndirectMessageCount,
+  }) {
     let indicator = unreadDirectMessageCount;
 
     if (indicator === 0 && unreadIndirectMessageCount !== 0) {
@@ -319,10 +380,14 @@ export default class AppStore extends Store {
       indicator = parseInt(indicator, 10);
     }
 
-    ipcRenderer.send('updateAppIndicator', { indicator });
+    ipcRenderer.send('updateAppIndicator', {
+      indicator,
+    });
   }
 
-  @action _launchOnStartup({ enable }) {
+  @action _launchOnStartup({
+    enable,
+  }) {
     this.autoLaunchOnStart = enable;
 
     try {
@@ -338,7 +403,9 @@ export default class AppStore extends Store {
     }
   }
 
-  @action _openExternalUrl({ url }) {
+  @action _openExternalUrl({
+    url,
+  }) {
     const parsedUrl = new URL(url);
     debug('open external url', parsedUrl);
 
@@ -348,14 +415,20 @@ export default class AppStore extends Store {
   }
 
   @action _checkForUpdates() {
-    this.updateStatus = this.updateStatusTypes.CHECKING;
-    ipcRenderer.send('autoUpdate', { action: 'check' });
+    if (this.isOnline) {
+      this.updateStatus = this.updateStatusTypes.CHECKING;
+      ipcRenderer.send('autoUpdate', {
+        action: 'check',
+      });
 
-    this.actions.recipe.update();
+      this.actions.recipe.update();
+    }
   }
 
   @action _installUpdate() {
-    ipcRenderer.send('autoUpdate', { action: 'install' });
+    ipcRenderer.send('autoUpdate', {
+      action: 'install',
+    });
   }
 
   @action _resetUpdateStatus() {
@@ -366,7 +439,10 @@ export default class AppStore extends Store {
     this.healthCheckRequest.execute();
   }
 
-  @action _muteApp({ isMuted, overrideSystemMute = true }) {
+  @action _muteApp({
+    isMuted,
+    overrideSystemMute = true,
+  }) {
     this.isSystemMuteOverridden = overrideSystemMute;
     this.actions.settings.update({
       type: 'app',
@@ -377,7 +453,9 @@ export default class AppStore extends Store {
   }
 
   @action _toggleMuteApp() {
-    this._muteApp({ isMuted: !this.stores.settings.all.app.isAppMuted });
+    this._muteApp({
+      isMuted: !this.stores.settings.all.app.isAppMuted,
+    });
   }
 
   @action async _clearAllCache() {
@@ -386,12 +464,20 @@ export default class AppStore extends Store {
     const allServiceIds = await getServiceIdsFromPartitions();
     const allOrphanedServiceIds = allServiceIds.filter(id => !this.stores.services.all.find(s => id.replace('service-', '') === s.id));
 
+<<<<<<< HEAD
     try {
       await Promise.all(allOrphanedServiceIds.map(id => removeServicePartitionDirectory(id)));
     } catch (ex) {
       console.log('Error while deleting service partition directory - ', ex);
     }
     await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({ serviceId: s.id })));
+=======
+    await Promise.all(allOrphanedServiceIds.map(id => removeServicePartitionDirectory(id)));
+
+    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({
+      serviceId: s.id,
+    })));
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
     await clearAppCache._promise;
 
@@ -446,7 +532,10 @@ export default class AppStore extends Store {
     const { showMessageBadgesEvenWhenMuted } = this.stores.ui;
 
     if (!showMessageBadgesEvenWhenMuted) {
-      this.actions.app.setBadge({ unreadDirectMessageCount: 0, unreadIndirectMessageCount: 0 });
+      this.actions.app.setBadge({
+        unreadDirectMessageCount: 0,
+        unreadIndirectMessageCount: 0,
+      });
     }
   }
 
@@ -491,8 +580,11 @@ export default class AppStore extends Store {
     return autoLauncher.isEnabled() || false;
   }
 
-  _systemDND() {
-    const dnd = getDoNotDisturb();
+  async _systemDND() {
+    debug('Checking if Do Not Disturb Mode is on');
+    const dnd = await ipcRenderer.invoke('get-dnd');
+    debug('Do not disturb mode is', dnd);
+    // ipcRenderer.on('autoUpdate', (event, data) => {
     if (dnd !== this.stores.settings.all.app.isAppMuted && !this.isSystemMuteOverridden) {
       this.actions.app.muteApp({
         isMuted: dnd,

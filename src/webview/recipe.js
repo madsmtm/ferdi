@@ -2,8 +2,11 @@
 import { ipcRenderer, remote, desktopCapturer } from 'electron';
 import path from 'path';
 import { autorun, computed, observable } from 'mobx';
+<<<<<<< HEAD
 import fs from 'fs-extra';
 import { loadModule } from 'cld3-asm';
+=======
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 import { debounce } from 'lodash';
 import { FindInPage } from 'electron-find';
 
@@ -23,7 +26,7 @@ import customDarkModeCss from './darkmode/custom';
 import RecipeWebview from './lib/RecipeWebview';
 import Userscript from './lib/Userscript';
 
-import spellchecker, { switchDict, disable as disableSpellchecker, getSpellcheckerLocaleByFuzzyIdentifier } from './spellchecker';
+import { switchDict, getSpellcheckerLocaleByFuzzyIdentifier } from './spellchecker';
 import { injectDarkModeStyle, isDarkModeStyleInjected, removeDarkModeStyle } from './darkmode';
 import './notifications';
 
@@ -156,7 +159,18 @@ class RecipeController {
 
     debug('Send "hello" to host');
     setTimeout(() => ipcRenderer.sendToHost('hello'), 100);
+<<<<<<< HEAD
     await spellchecker();
+=======
+
+    this.spellcheckingProvider = null;
+    contextMenu(
+      () => this.settings.app.enableSpellchecking,
+      () => this.settings.app.spellcheckerLanguage,
+      () => this.spellcheckerLanguage,
+    );
+
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     autorun(() => this.update());
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -244,18 +258,17 @@ class RecipeController {
       if (spellcheckerLanguage.includes('automatic')) {
         this.automaticLanguageDetection();
         debug('Found `automatic` locale, falling back to user locale until detected', this.settings.app.locale);
+<<<<<<< HEAD
         spellcheckerLanguage.push(this.settings.app.locale);
       } else if (this.cldIdentifier) {
         this.cldIdentifier.destroy();
+=======
+        spellcheckerLanguage = this.settings.app.locale;
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
       switchDict(spellcheckerLanguage);
     } else {
       debug('Disable spellchecker');
-      disableSpellchecker();
-
-      if (this.cldIdentifier) {
-        this.cldIdentifier.destroy();
-      }
     }
 
     if (!this.recipe) {
@@ -366,10 +379,7 @@ class RecipeController {
   }
 
   async automaticLanguageDetection() {
-    const cldFactory = await loadModule();
-    this.cldIdentifier = cldFactory.create(0, 1000);
-
-    window.addEventListener('keyup', debounce((e) => {
+    window.addEventListener('keyup', debounce(async (e) => {
       const element = e.target;
 
       if (!element) return;
@@ -382,11 +392,12 @@ class RecipeController {
       }
 
       // Force a minimum length to get better detection results
-      if (value.length < 30) return;
+      if (value.length < 25) return;
 
       debug('Detecting language for', value);
-      const findResult = this.cldIdentifier.findLanguage(value);
+      const locale = await ipcRenderer.invoke('detect-language', { sample: value });
 
+<<<<<<< HEAD
       debug('Language detection result', findResult);
 
       if (findResult.is_reliable) {
@@ -398,6 +409,12 @@ class RecipeController {
             spellcheckerLocale,
           ]);
         }
+=======
+      const spellcheckerLocale = getSpellcheckerLocaleByFuzzyIdentifier(locale);
+      debug('Language detected reliably, setting spellchecker language to', spellcheckerLocale);
+      if (spellcheckerLocale) {
+        switchDict(spellcheckerLocale);
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
     }, 225));
   }
@@ -411,7 +428,8 @@ new RecipeController();
 const originalWindowOpen = window.open;
 
 window.open = (url, frameName, features) => {
-  if (!url && !frameName && !features) {
+  debug('window.open', url, frameName, features);
+  if (!url) {
     // The service hasn't yet supplied a URL (as used in Skype).
     // Return a new dummy window object and wait for the service to change the properties
     const newWindow = {
@@ -423,8 +441,12 @@ window.open = (url, frameName, features) => {
     const checkInterval = setInterval(() => {
       // Has the service changed the URL yet?
       if (newWindow.location.href !== '') {
-        // Open the new URL
-        ipcRenderer.sendToHost('new-window', newWindow.location.href);
+        if (features) {
+          originalWindowOpen(newWindow.location.href, frameName, features);
+        } else {
+          // Open the new URL
+          ipcRenderer.sendToHost('new-window', newWindow.location.href);
+        }
         clearInterval(checkInterval);
       }
     }, 0);

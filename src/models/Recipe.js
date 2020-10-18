@@ -40,6 +40,11 @@ export default class Recipe {
 
   autoHibernate = false;
 
+<<<<<<< HEAD
+=======
+  partition = '';
+
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   constructor(data) {
     if (!data) {
       throw Error('Recipe config not valid');
@@ -82,6 +87,11 @@ export default class Recipe {
 
     this.autoHibernate = data.config.autoHibernate || this.autoHibernate;
 
+<<<<<<< HEAD
+=======
+    this.partition = data.config.partition || this.partition;
+
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     this.message = data.config.message || this.message;
   }
 

@@ -1,5 +1,9 @@
 import {
+<<<<<<< HEAD
   app, Menu, nativeImage, nativeTheme, systemPreferences, Tray, ipcMain,
+=======
+  app, Tray, Menu, systemPreferences, nativeTheme, nativeImage,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 } from 'electron';
 import path from 'path';
 import {

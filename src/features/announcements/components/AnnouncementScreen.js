@@ -234,13 +234,24 @@ class AnnouncementScreen extends Component {
                         label={announcement.main.cta.label}
                         onClick={() => {
                           const {
+<<<<<<< HEAD
                             href,
+=======
+                            analytics,
+                            href,
+                            label,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                           } = announcement.main.cta;
                           if (announcement.main.cta.href.startsWith('http')) {
                             actions.app.openExternalUrl({ url: href });
                           } else {
                             window.location.href = `#${href}`;
                           }
+<<<<<<< HEAD
+=======
+
+                          gaEvent(analytics.category, analytics.action, label);
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                         }}
                       />
                     </div>
@@ -265,13 +276,24 @@ class AnnouncementScreen extends Component {
                       label={announcement.spotlight.cta.label}
                       onClick={() => {
                         const {
+<<<<<<< HEAD
                           href,
+=======
+                          analytics,
+                          href,
+                          label,
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                         } = announcement.spotlight.cta;
                         if (announcement.spotlight.cta.href.startsWith('http')) {
                           actions.app.openExternalUrl({ url: href });
                         } else {
                           window.location.href = `#${href}`;
                         }
+<<<<<<< HEAD
+=======
+
+                        gaEvent(analytics.category, analytics.action, label);
+>>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                       }}
                     />
                   </div>
