@@ -225,7 +225,6 @@ export function webserver() {
   );
 }
 
-<<<<<<< HEAD
 export function recipes() {
   return gulp.src(paths.recipes.src, { since: gulp.lastRun(recipes) })
     .pipe(gulp.dest(paths.recipes.dest));
@@ -233,20 +232,12 @@ export function recipes() {
 export function recipeInfo() {
   return gulp.src(paths.recipeInfo.src, { since: gulp.lastRun(recipeInfo) })
     .pipe(gulp.dest(paths.recipeInfo.dest));
-=======
-export function sign(done) {
-  _shell(`codesign --verbose=4 --deep --strict --force --sign "${process.env.SIGNING_IDENTITY}" "${__dirname}/node_modules/electron/dist/Electron.app"`, done);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 }
 
 const build = gulp.series(
   clean,
   gulp.parallel(mvSrc, mvPackageJson, mvLernaPackages),
-<<<<<<< HEAD
   gulp.parallel(html, scripts, styles, verticalStyle, recipes, recipeInfo),
-=======
-  gulp.parallel(html, scripts, styles),
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 );
 export { build };
 

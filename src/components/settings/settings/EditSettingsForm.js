@@ -14,13 +14,10 @@ import Input from '../../ui/Input';
 
 import { FRANZ_TRANSLATION } from '../../../config';
 import { isMac } from '../../../environment';
-<<<<<<< HEAD
 
 const {
   systemPreferences,
 } = remote;
-=======
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 const messages = defineMessages({
   headline: {
@@ -170,17 +167,14 @@ export default @observer class EditSettingsForm extends Component {
     isTodosEnabled: PropTypes.bool.isRequired,
     isTodosActivated: PropTypes.bool.isRequired,
     isWorkspaceEnabled: PropTypes.bool.isRequired,
-<<<<<<< HEAD
     automaticUpdates: PropTypes.bool.isRequired,
     hibernationEnabled: PropTypes.bool.isRequired,
     isDarkmodeEnabled: PropTypes.bool.isRequired,
     isAdaptableDarkModeEnabled: PropTypes.bool.isRequired,
     isNightlyEnabled: PropTypes.bool.isRequired,
     openProcessManager: PropTypes.func.isRequired,
-=======
     hasAddedTodosAsService: PropTypes.bool.isRequired,
     isOnline: PropTypes.bool.isRequired,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   };
 
   static contextTypes = {
@@ -229,17 +223,14 @@ export default @observer class EditSettingsForm extends Component {
       isSpellcheckerIncludedInCurrentPlan,
       isTodosEnabled,
       isWorkspaceEnabled,
-<<<<<<< HEAD
       automaticUpdates,
       hibernationEnabled,
       isDarkmodeEnabled,
       openProcessManager,
       isTodosActivated,
       isNightlyEnabled,
-=======
       hasAddedTodosAsService,
       isOnline,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     } = this.props;
     const { intl } = this.context;
 
@@ -308,7 +299,6 @@ export default @observer class EditSettingsForm extends Component {
             </div>
 
             {/* General */}
-<<<<<<< HEAD
             { this.state.activeSetttingsTab === 'general' && (
               <div>
                 <Toggle field={form.$('autoLaunchOnStart')} />
@@ -479,20 +469,6 @@ export default @observer class EditSettingsForm extends Component {
                   </span>
                 </p>
               </div>
-=======
-            <h2 id="general">{intl.formatMessage(messages.headlineGeneral)}</h2>
-            <Toggle field={form.$('autoLaunchOnStart')} />
-            <Toggle field={form.$('runInBackground')} />
-            <Toggle field={form.$('enableSystemTray')} />
-            {process.platform === 'win32' && (
-              <Toggle field={form.$('minimizeToSystemTray')} />
-            )}
-            {isWorkspaceEnabled && (
-              <Toggle field={form.$('keepAllWorkspacesLoaded')} />
-            )}
-            {isTodosEnabled && !hasAddedTodosAsService && (
-              <Toggle field={form.$('enableTodos')} />
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
             )}
 
             {/* Appearance */}
@@ -560,10 +536,10 @@ export default @observer class EditSettingsForm extends Component {
                     <Toggle
                       field={form.$('enableSpellchecking')}
                     />
-                    {form.$('enableSpellchecking').value && !isMac && (
-                      <Select field={form.$('spellcheckerLanguage')} multiple />
+                    {!isMac && form.$('enableSpellchecking').value && (
+                      <Select field={form.$('spellcheckerLanguage')} />
                     )}
-                    {form.$('enableSpellchecking').value && isMac && (
+                    {isMac && form.$('enableSpellchecking').value && (
                       <p>{intl.formatMessage(messages.spellCheckerLanguageInfo)}</p>
                     )}
                   </Fragment>
@@ -640,7 +616,6 @@ export default @observer class EditSettingsForm extends Component {
                   }}
                   onChange={window.ferdi.features.nightlyBuilds.toggleFeature}
                 />
-<<<<<<< HEAD
                 {updateIsReadyToInstall ? (
                   <Button
                     label={intl.formatMessage(messages.buttonInstallUpdate)}
@@ -654,10 +629,6 @@ export default @observer class EditSettingsForm extends Component {
                     disabled={!automaticUpdates || isCheckingForUpdates || isUpdateAvailable}
                     loaded={!isCheckingForUpdates || !isUpdateAvailable}
                   />
-=======
-                {!isMac && form.$('enableSpellchecking').value && (
-                  <Select field={form.$('spellcheckerLanguage')} />
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
                 )}
                 <br />
               </div>
@@ -693,28 +664,6 @@ export default @observer class EditSettingsForm extends Component {
                 {intl.formatMessage(messages.languageDisclaimer)}
               </p>
             </div>
-<<<<<<< HEAD
-=======
-
-            {/* Updates */}
-            <h2 id="updates">{intl.formatMessage(messages.headlineUpdates)}</h2>
-            {updateIsReadyToInstall ? (
-              <Button
-                label={intl.formatMessage(messages.buttonInstallUpdate)}
-                onClick={installUpdate}
-              />
-            ) : (
-              <Button
-                buttonType="secondary"
-                label={intl.formatMessage(updateButtonLabelMessage)}
-                onClick={checkForUpdates}
-                disabled={isCheckingForUpdates || isUpdateAvailable || !isOnline}
-                loaded={!isCheckingForUpdates || !isUpdateAvailable}
-              />
-            )}
-            {noUpdateAvailable && (
-              <p>{intl.formatMessage(messages.updateStatusUpToDate)}</p>
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
             )}
           </form>
         </div>

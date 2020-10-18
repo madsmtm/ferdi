@@ -9,11 +9,8 @@ import injectSheet from 'react-jss';
 
 import ServiceView from './ServiceView';
 import Appear from '../../ui/effects/Appear';
-<<<<<<< HEAD
 import serverlessLogin from '../../../helpers/serverless-helpers';
-=======
 import { TODOS_RECIPE_ID } from '../../../features/todos';
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 const messages = defineMessages({
   welcome: {
@@ -48,11 +45,7 @@ const styles = {
   },
 };
 
-<<<<<<< HEAD
 export default @injectSheet(styles) @inject('actions') @observer class Services extends Component {
-=======
-export default @injectSheet(styles) @observer class Services extends Component {
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   static propTypes = {
     services: MobxPropTypes.arrayOrObservableArray,
     setWebviewReference: PropTypes.func.isRequired,
@@ -65,11 +58,8 @@ export default @injectSheet(styles) @observer class Services extends Component {
     userHasCompletedSignup: PropTypes.bool.isRequired,
     hasActivatedTrial: PropTypes.bool.isRequired,
     classes: PropTypes.object.isRequired,
-<<<<<<< HEAD
     actions: PropTypes.object.isRequired,
-=======
     isSpellcheckerEnabled: PropTypes.bool.isRequired,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   };
 
   static defaultProps = {

@@ -4,7 +4,6 @@ import {
   reaction,
   computed,
   observable,
-  toJS,
 } from 'mobx';
 import { debounce, remove } from 'lodash';
 import ms from 'ms';
@@ -20,12 +19,9 @@ import { getRecipeDirectory, getDevRecipeDirectory } from '../helpers/recipe-hel
 import { workspaceStore } from '../features/workspaces';
 import { serviceLimitStore } from '../features/serviceLimit';
 import { RESTRICTION_TYPES } from '../models/Service';
-<<<<<<< HEAD
 import { KEEP_WS_LOADED_USID } from '../config';
-=======
 import { TODOS_RECIPE_ID } from '../features/todos';
 import { SPELLCHECKER_LOCALES } from '../i18n/languages';
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 const debug = require('debug')('Ferdi:ServiceStore');
 
@@ -88,14 +84,10 @@ export default class ServicesStore extends Store {
     this.actions.service.toggleAudio.listen(this._toggleAudio.bind(this));
     this.actions.service.openDevTools.listen(this._openDevTools.bind(this));
     this.actions.service.openDevToolsForActiveService.listen(this._openDevToolsForActiveService.bind(this));
-<<<<<<< HEAD
-    this.actions.service.setHibernation.listen(this._setHibernation.bind(this));
-    this.actions.service.shareSettingsWithServiceProcess.listen(this._shareSettingsWithServiceProcess.bind(this));
-=======
     this.actions.service.hibernate.listen(this._hibernate.bind(this));
     this.actions.service.awake.listen(this._awake.bind(this));
     this.actions.service.resetLastPollTimer.listen(this._resetLastPollTimer.bind(this));
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+    this.actions.service.shareSettingsWithServiceProcess.listen(this._shareSettingsWithServiceProcess.bind(this));
 
     this.registerReactions([
       this._focusServiceReaction.bind(this),
@@ -147,16 +139,6 @@ export default class ServicesStore extends Store {
     this.serviceMaintenanceTick();
   }
 
-<<<<<<< HEAD
-=======
-  initialize() {
-    super.initialize();
-
-    // Check services to become hibernated
-    this.serviceMaintenanceTick();
-  }
-
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   teardown() {
     super.teardown();
 
@@ -178,13 +160,6 @@ export default class ServicesStore extends Store {
    */
   _serviceMaintenance() {
     this.all.forEach((service) => {
-<<<<<<< HEAD
-      if (service.lastPoll && (service.lastPoll) - service.lastPollAnswer > ms('30s')) {
-        // If service did not reply for more than 30s try to reload.
-        if (!service.isActive) {
-          if (this.stores.app.isOnline && service.lostRecipeReloadAttempt < 3) {
-            service.webview.reload();
-=======
       // Defines which services should be hibernated.
       if (!service.isActive && (Date.now() - service.lastUsed > ms('5m'))) {
         // If service is stale for 5 min, hibernate it.
@@ -197,16 +172,12 @@ export default class ServicesStore extends Store {
           if (this.stores.app.isOnline && service.lostRecipeReloadAttempt < 3) {
             debug(`Reloading service: ${service.name} (${service.id}). Attempt: ${service.lostRecipeReloadAttempt}`);
             // service.webview.reload();
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
             service.lostRecipeReloadAttempt += 1;
 
             service.lostRecipeConnection = false;
           }
         } else {
-<<<<<<< HEAD
-=======
           debug(`Service lost connection: ${service.name} (${service.id}).`);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
           service.lostRecipeConnection = true;
         }
       } else {
@@ -501,16 +472,12 @@ export default class ServicesStore extends Store {
       this.all[index].isActive = false;
     });
     service.isActive = true;
-<<<<<<< HEAD
-    service.lastUsed = Date.now();
-=======
     this._awake({ serviceId: service.id });
     service.lastUsed = Date.now();
 
     if (this.active.recipe.id === TODOS_RECIPE_ID && !this.stores.todos.settings.isFeatureEnabledByUser) {
       this.actions.todos.toggleTodosFeatureVisibility();
     }
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
     // Update list of last used services
     this.lastUsedServices = this.lastUsedServices.filter(id => id !== serviceId);
@@ -700,15 +667,11 @@ export default class ServicesStore extends Store {
   @action _sendIPCMessage({ serviceId, channel, args }) {
     const service = this.one(serviceId);
 
-    if (service.webview) {
-<<<<<<< HEAD
-      // Make sure the args are clean, otherwise ElectronJS can't transmit them
-      const cleanArgs = JSON.parse(JSON.stringify(args));
+    // Make sure the args are clean, otherwise ElectronJS can't transmit them
+    const cleanArgs = JSON.parse(JSON.stringify(args));
 
+    if (service.webview) {
       service.webview.send(channel, cleanArgs);
-=======
-      service.webview.send(channel, toJS(args));
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     }
   }
 
@@ -745,18 +708,12 @@ export default class ServicesStore extends Store {
 
     service.resetMessageCount();
     service.lostRecipeConnection = false;
-<<<<<<< HEAD
-
-    // service.webview.loadURL(service.url);
-    service.webview.reload();
-=======
 
     if (service.recipe.id === TODOS_RECIPE_ID) {
       return this.actions.todos.reload();
     }
 
     return service.webview.loadURL(service.url);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   }
 
   @action _reloadActive() {
@@ -856,11 +813,6 @@ export default class ServicesStore extends Store {
     }
   }
 
-<<<<<<< HEAD
-  @action _setHibernation({ serviceId, hibernating }) {
-    const service = this.one(serviceId);
-    service.isHibernating = hibernating;
-=======
   @action _hibernate({ serviceId }) {
     const service = this.one(serviceId);
     if (service.isActive || !service.isHibernationEnabled) {
@@ -895,7 +847,6 @@ export default class ServicesStore extends Store {
         resetTimer(service);
       }
     }
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   }
 
   // Reactions
@@ -1030,7 +981,7 @@ export default class ServicesStore extends Store {
   }
 
   _checkForActiveService() {
-    if (this.stores.router.location.pathname.includes('auth/signup')) {
+    if (!this.stores.router.location || this.stores.router.location.pathname.includes('auth/signup')) {
       return;
     }
 

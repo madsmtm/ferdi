@@ -12,7 +12,6 @@ import windowStateKeeper from 'electron-window-state';
 import { enforceMacOSAppLocation } from 'electron-util';
 
 // Set app directory before loading user modules
-<<<<<<< HEAD
 if (process.env.FERDI_APPDATA_DIR != null) {
   app.setPath('appData', process.env.FERDI_APPDATA_DIR);
   app.setPath('userData', path.join(app.getPath('appData')));
@@ -22,14 +21,6 @@ if (process.env.FERDI_APPDATA_DIR != null) {
 } else if (process.platform === 'win32') {
   app.setPath('appData', process.env.APPDATA);
   app.setPath('userData', path.join(app.getPath('appData'), app.name));
-=======
-if (process.env.FRANZ_APPDATA_DIR != null) {
-  app.setPath('appData', process.env.FRANZ_APPDATA_DIR);
-  app.setPath('userData', path.join(app.getPath('appData')));
-} else if (process.platform === 'win32') {
-  app.setPath('appData', process.env.APPDATA);
-  app.setPath('userData', path.join(app.getPath('appData'), app.getName()));
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 }
 
 if (isDevMode) {
@@ -49,11 +40,7 @@ import DBus from './lib/DBus';
 import Settings from './electron/Settings';
 import handleDeepLink from './electron/deepLinking';
 import { isPositionValid } from './electron/windowUtils';
-<<<<<<< HEAD
-// import askFormacOSPermissions from './electron/macOSPermissions';
-=======
 import askFormacOSPermissions from './electron/macOSPermissions';
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 import { appId } from './package.json'; // eslint-disable-line import/no-unresolved
 import './electron/exception';
 
@@ -64,7 +51,6 @@ import {
 import { asarPath } from './helpers/asar-helpers';
 import { isValidExternalURL } from './helpers/url-helpers';
 import userAgent from './helpers/userAgent-helpers';
-<<<<<<< HEAD
 
 const debug = require('debug')('Ferdi:App');
 
@@ -75,16 +61,9 @@ if (isWindows) {
   app.allowRendererProcessReuse = false;
 }
 
-
-
 // Globally set useragent to fix user agent override in service workers
 debug('Set userAgent to ', userAgent());
 app.userAgentFallback = userAgent();
-=======
-
-/* eslint-enable import/first */
-const debug = require('debug')('Franz:App');
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 // Globally set useragent to fix user agent override in service workers
 debug('Set userAgent to ', userAgent());
@@ -221,10 +200,7 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true,
-<<<<<<< HEAD
       preload: path.join(__dirname, 'sentry.js'),
-=======
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       enableRemoteModule: true,
     },
   });
@@ -240,18 +216,11 @@ const createWindow = () => {
   mainWindow.webContents.on('did-finish-load', () => {
     const fns = onDidLoadFns;
     onDidLoadFns = null;
-<<<<<<< HEAD
-    if (fns) {
-      for (const fn of fns) { // eslint-disable-line no-unused-vars
-        fn(mainWindow);
-      }
-=======
 
     if (!fns) return;
 
     for (const fn of fns) {
       fn(mainWindow);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     }
   });
 
@@ -358,16 +327,9 @@ const createWindow = () => {
     }
   });
 
-<<<<<<< HEAD
-  // Asking for permissions like this currently crashes Ferdi
-  // if (isMac) {
-  //   askFormacOSPermissions();
-  // }
-=======
   if (isMac) {
     askFormacOSPermissions();
   }
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
   mainWindow.on('show', () => {
     debug('Skip taskbar: true');

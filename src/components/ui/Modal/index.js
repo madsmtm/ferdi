@@ -41,8 +41,6 @@ export default @injectCSS(styles) class Modal extends Component {
       showClose,
     } = this.props;
 
-    const appRoot = document.getElementById('root');
-
     return (
       <ReactModal
         isOpen={isOpen}
@@ -55,11 +53,7 @@ export default @injectCSS(styles) class Modal extends Component {
         portal={portal}
         onRequestClose={close}
         shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}
-<<<<<<< HEAD
-        appElement={appRoot}
-=======
         appElement={document.getElementById('root')}
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       >
         {showClose && close && (
           <button

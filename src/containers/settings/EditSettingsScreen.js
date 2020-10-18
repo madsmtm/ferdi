@@ -611,7 +611,6 @@ export default @inject('stores', 'actions') @observer class EditSettingsScreen e
           isSpellcheckerIncludedInCurrentPlan={spellcheckerConfig.isIncludedInCurrentPlan}
           isTodosEnabled={todos.isFeatureActive}
           isWorkspaceEnabled={workspaces.isFeatureActive}
-<<<<<<< HEAD
           lockingFeatureEnabled={lockingFeatureEnabled}
           automaticUpdates={this.props.stores.settings.app.automaticUpdates}
           hibernationEnabled={this.props.stores.settings.app.hibernate}
@@ -621,10 +620,8 @@ export default @inject('stores', 'actions') @observer class EditSettingsScreen e
           isUsingCustomTodoService={this.props.stores.todos.isUsingCustomTodoService}
           isNightlyEnabled={this.props.stores.settings.app.nightly}
           openProcessManager={() => this.openProcessManager()}
-=======
           hasAddedTodosAsService={services.isTodosServiceAdded}
           isOnline={app.isOnline}
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         />
       </ErrorBoundary>
     );

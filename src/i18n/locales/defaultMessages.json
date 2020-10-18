@@ -1386,8 +1386,6 @@
     "descriptors": [
       {
         "defaultMessage": "!!!Home",
-<<<<<<< HEAD
-=======
         "end": {
           "column": 3,
           "line": 16
@@ -1567,279 +1565,6 @@
       }
     ],
     "path": "src/components/services/content/ConnectionLostBanner.json"
-  },
-  {
-    "descriptors": [
-      {
-        "defaultMessage": "!!!Oh no!",
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
-        "end": {
-          "column": 3,
-          "line": 16
-        },
-        "file": "src/components/services/content/ConnectionBanner.js",
-        "id": "webControls.goHome",
-        "start": {
-          "column": 10,
-          "line": 13
-        }
-      },
-      {
-        "defaultMessage": "!!!Open in Browser",
-        "end": {
-          "column": 3,
-          "line": 20
-        },
-        "file": "src/components/services/content/ConnectionBanner.js",
-        "id": "webControls.openInBrowser",
-        "start": {
-          "column": 17,
-          "line": 17
-        }
-      },
-      {
-        "defaultMessage": "!!!Back",
-        "end": {
-          "column": 3,
-          "line": 24
-        },
-        "file": "src/components/services/content/ConnectionBanner.js",
-        "id": "webControls.back",
-        "start": {
-          "column": 8,
-          "line": 21
-        }
-      },
-      {
-        "defaultMessage": "!!!Forward",
-        "end": {
-          "column": 3,
-          "line": 28
-        },
-        "file": "src/components/services/content/ConnectionBanner.js",
-        "id": "webControls.forward",
-        "start": {
-          "column": 11,
-          "line": 25
-        }
-      },
-      {
-        "defaultMessage": "!!!Reload",
-        "end": {
-          "column": 3,
-          "line": 32
-        },
-        "file": "src/components/services/content/ConnectionBanner.js",
-        "id": "webControls.reload",
-        "start": {
-          "column": 10,
-          "line": 29
-        }
-      }
-    ],
-    "path": "src/components/services/content/ConnectionBanner.json"
-  },
-  {
-    "descriptors": [
-      {
-        "defaultMessage": "!!!Home",
-        "end": {
-          "column": 3,
-          "line": 16
-        },
-        "file": "src/components/services/content/ConnectionLost.js",
-        "id": "webControls.goHome",
-        "start": {
-          "column": 10,
-          "line": 13
-        }
-      },
-      {
-        "defaultMessage": "!!!Open in Browser",
-        "end": {
-          "column": 3,
-          "line": 20
-        },
-        "file": "src/components/services/content/ConnectionLost.js",
-        "id": "webControls.openInBrowser",
-        "start": {
-          "column": 17,
-          "line": 17
-        }
-      },
-      {
-        "defaultMessage": "!!!Back",
-        "end": {
-          "column": 3,
-          "line": 24
-        },
-        "file": "src/components/services/content/ConnectionLost.js",
-        "id": "webControls.back",
-        "start": {
-          "column": 8,
-          "line": 21
-        }
-      },
-      {
-        "defaultMessage": "!!!Forward",
-        "end": {
-          "column": 3,
-          "line": 28
-        },
-        "file": "src/components/services/content/ConnectionLost.js",
-        "id": "webControls.forward",
-        "start": {
-          "column": 11,
-          "line": 25
-        }
-      },
-      {
-        "defaultMessage": "!!!Reload",
-        "end": {
-          "column": 3,
-          "line": 32
-        },
-        "file": "src/components/services/content/ConnectionLost.js",
-        "id": "webControls.reload",
-        "start": {
-          "column": 10,
-          "line": 29
-        }
-      }
-    ],
-    "path": "src/components/services/content/ConnectionLost.json"
-  },
-  {
-    "descriptors": [
-      {
-        "defaultMessage": "!!!Oh no! Franz lost the connection to {name}.",
-        "end": {
-          "column": 3,
-          "line": 18
-        },
-        "file": "src/components/services/content/ConnectionLostBanner.js",
-        "id": "connectionLostBanner.message",
-        "start": {
-          "column": 8,
-          "line": 15
-        }
-      },
-      {
-        "defaultMessage": "!!!What happened?",
-        "end": {
-          "column": 3,
-<<<<<<< HEAD
-          "line": 22
-=======
-          "line": 18
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
-        },
-        "file": "src/components/services/content/ConnectionLostBanner.js",
-        "id": "connectionLostBanner.informationLink",
-        "start": {
-<<<<<<< HEAD
-          "column": 19,
-          "line": 19
-=======
-          "column": 11,
-          "line": 15
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
-        }
-      },
-      {
-        "defaultMessage": "!!!Reload Service",
-        "end": {
-          "column": 3,
-<<<<<<< HEAD
-          "line": 26
-=======
-          "line": 22
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
-        },
-        "file": "src/components/services/content/ConnectionLostBanner.js",
-        "id": "connectionLostBanner.cta",
-        "start": {
-<<<<<<< HEAD
-          "column": 7,
-          "line": 23
-=======
-          "column": 14,
-          "line": 19
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
-        }
-      }
-    ],
-    "path": "src/components/services/content/ConnectionLostBanner.json"
-  },
-  {
-    "descriptors": [
-      {
-        "defaultMessage": "!!!Home",
-        "end": {
-          "column": 3,
-          "line": 16
-        },
-        "file": "src/components/services/content/WebControls.js",
-        "id": "webControls.goHome",
-        "start": {
-          "column": 10,
-          "line": 13
-        }
-      },
-      {
-        "defaultMessage": "!!!Open in Browser",
-        "end": {
-          "column": 3,
-          "line": 20
-        },
-        "file": "src/components/services/content/WebControls.js",
-        "id": "webControls.openInBrowser",
-        "start": {
-          "column": 17,
-          "line": 17
-        }
-      },
-      {
-        "defaultMessage": "!!!Back",
-        "end": {
-          "column": 3,
-          "line": 24
-        },
-        "file": "src/components/services/content/WebControls.js",
-        "id": "webControls.back",
-        "start": {
-          "column": 8,
-          "line": 21
-        }
-      },
-      {
-        "defaultMessage": "!!!Forward",
-        "end": {
-          "column": 3,
-          "line": 28
-        },
-        "file": "src/components/services/content/WebControls.js",
-        "id": "webControls.forward",
-        "start": {
-          "column": 11,
-          "line": 25
-        }
-      },
-      {
-        "defaultMessage": "!!!Reload",
-        "end": {
-          "column": 3,
-          "line": 32
-        },
-        "file": "src/components/services/content/WebControls.js",
-        "id": "webControls.reload",
-        "start": {
-          "column": 10,
-          "line": 29
-        }
-      }
-    ],
-    "path": "src/components/services/content/WebControls.json"
   },
   {
     "descriptors": [
@@ -1917,11 +1642,7 @@
         "defaultMessage": "!!!{name} is disabled",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 12
-=======
-          "line": 23
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/ServiceDisabled.js",
         "id": "service.disabledHandler.headline",
@@ -1940,7 +1661,6 @@
         "id": "service.disabledHandler.action",
         "start": {
           "column": 10,
-<<<<<<< HEAD
           "line": 13
         }
       }
@@ -1973,63 +1693,45 @@
         "start": {
           "column": 20,
           "line": 15
-=======
-          "line": 20
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Franz Professional Plan required",
         "end": {
           "column": 3,
-          "line": 27
+          "line": 22
         },
         "file": "src/components/services/content/ServiceRestricted.js",
         "id": "service.restrictedHandler.customUrl.headline",
         "start": {
-<<<<<<< HEAD
           "column": 21,
           "line": 19
-=======
-          "column": 8,
-          "line": 24
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Please upgrade to the Franz Professional plan to use custom urls & self hosted services.",
         "end": {
           "column": 3,
-          "line": 31
+          "line": 26
         },
         "file": "src/components/services/content/ServiceRestricted.js",
         "id": "service.restrictedHandler.customUrl.text",
         "start": {
-<<<<<<< HEAD
           "column": 17,
           "line": 23
-=======
-          "column": 24,
-          "line": 28
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Upgrade Account",
         "end": {
           "column": 3,
-          "line": 35
+          "line": 30
         },
         "file": "src/components/services/content/ServiceRestricted.js",
         "id": "service.restrictedHandler.action",
         "start": {
-<<<<<<< HEAD
           "column": 10,
           "line": 27
-=======
-          "column": 23,
-          "line": 32
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -2041,110 +1743,65 @@
         "defaultMessage": "!!!Welcome to Ferdi",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 18
-=======
-          "line": 39
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/Services.js",
         "id": "services.welcome",
         "start": {
-<<<<<<< HEAD
           "column": 11,
           "line": 15
-=======
-          "column": 16,
-          "line": 36
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Get started",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 22
-=======
-          "line": 43
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/Services.js",
         "id": "services.getStarted",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 19
-=======
-          "column": 15,
-          "line": 40
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Please login to use Ferdi.",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 26
-=======
-          "line": 47
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/Services.js",
         "id": "services.login",
         "start": {
-<<<<<<< HEAD
           "column": 9,
           "line": 23
-=======
-          "column": 18,
-          "line": 44
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Use Ferdi without an Account",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 30
-=======
-          "line": 51
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/Services.js",
         "id": "services.serverless",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 27
-=======
-          "column": 17,
-          "line": 48
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Optionally, you can change your Ferdi server by clicking the cog in the bottom left corner.",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 34
-=======
-          "line": 55
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/services/content/Services.js",
         "id": "services.serverInfo",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 31
-=======
-          "column": 17,
-          "line": 52
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -2283,117 +1940,117 @@
         "defaultMessage": "!!!Reload",
         "end": {
           "column": 3,
-          "line": 18
+          "line": 23
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.reload",
         "start": {
           "column": 10,
-          "line": 15
+          "line": 20
         }
       },
       {
         "defaultMessage": "!!!Edit",
         "end": {
           "column": 3,
-          "line": 22
+          "line": 27
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.edit",
         "start": {
           "column": 8,
-          "line": 19
+          "line": 24
         }
       },
       {
         "defaultMessage": "!!!Disable notifications",
         "end": {
           "column": 3,
-          "line": 26
+          "line": 31
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.disableNotifications",
         "start": {
           "column": 24,
-          "line": 23
+          "line": 28
         }
       },
       {
         "defaultMessage": "!!!Enable notifications",
         "end": {
           "column": 3,
-          "line": 30
+          "line": 35
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.enableNotification",
         "start": {
           "column": 23,
-          "line": 27
+          "line": 32
         }
       },
       {
         "defaultMessage": "!!!Disable audio",
         "end": {
           "column": 3,
-          "line": 34
+          "line": 39
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.disableAudio",
         "start": {
           "column": 16,
-          "line": 31
+          "line": 36
         }
       },
       {
         "defaultMessage": "!!!Enable audio",
         "end": {
           "column": 3,
-          "line": 38
+          "line": 43
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.enableAudio",
         "start": {
           "column": 15,
-          "line": 35
+          "line": 40
         }
       },
       {
         "defaultMessage": "!!!Disable Service",
         "end": {
           "column": 3,
-          "line": 42
+          "line": 47
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.disableService",
         "start": {
           "column": 18,
-          "line": 39
+          "line": 44
         }
       },
       {
         "defaultMessage": "!!!Enable Service",
         "end": {
           "column": 3,
-          "line": 46
+          "line": 51
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.enableService",
         "start": {
           "column": 17,
-          "line": 43
+          "line": 48
         }
       },
       {
         "defaultMessage": "!!!Delete Service",
         "end": {
           "column": 3,
-          "line": 50
+          "line": 55
         },
         "file": "src/components/services/tabs/TabItem.js",
         "id": "tabs.item.deleteService",
         "start": {
           "column": 17,
-          "line": 47
+          "line": 52
         }
       }
     ],
@@ -2683,176 +2340,104 @@
         "defaultMessage": "!!!Available services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 20
-=======
-          "line": 28
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.availableServices",
         "start": {
-<<<<<<< HEAD
           "column": 21,
           "line": 17
-=======
-          "column": 15,
-          "line": 25
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Your services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 24
-=======
-          "line": 32
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.yourServices",
         "start": {
-<<<<<<< HEAD
           "column": 16,
           "line": 21
-=======
-          "column": 17,
-          "line": 29
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Your workspaces",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 28
-=======
-          "line": 36
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.yourWorkspaces",
         "start": {
-<<<<<<< HEAD
           "column": 18,
           "line": 25
-=======
-          "column": 21,
-          "line": 33
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Account",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 32
-=======
-          "line": 40
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.account",
         "start": {
-<<<<<<< HEAD
           "column": 11,
           "line": 29
-=======
-          "column": 16,
-          "line": 37
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Manage Team",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 36
-=======
-          "line": 44
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.team",
         "start": {
-<<<<<<< HEAD
           "column": 8,
           "line": 33
-=======
-          "column": 22,
-          "line": 41
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Settings",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 40
-=======
-          "line": 48
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.settings",
         "start": {
-<<<<<<< HEAD
           "column": 12,
           "line": 37
-=======
-          "column": 23,
-          "line": 45
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!About Ferdi",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 44
-=======
-          "line": 52
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.supportFerdi",
         "start": {
-<<<<<<< HEAD
           "column": 16,
           "line": 41
-=======
-          "column": 13,
-          "line": 49
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Logout",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 48
-=======
-          "line": 56
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/navigation/SettingsNavigation.js",
         "id": "settings.navigation.logout",
         "start": {
-<<<<<<< HEAD
           "column": 10,
           "line": 45
-=======
-          "column": 16,
-          "line": 53
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -2864,319 +2449,182 @@
         "defaultMessage": "!!!Available Services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 24
-=======
-          "line": 60
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.headline",
         "start": {
-<<<<<<< HEAD
           "column": 12,
           "line": 21
-=======
-          "column": 20,
-          "line": 57
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Search service",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 28
-=======
-          "line": 64
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.searchService",
         "start": {
-<<<<<<< HEAD
           "column": 17,
           "line": 25
-=======
-          "column": 28,
-          "line": 61
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Most popular",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 32
-=======
-          "line": 68
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.mostPopular",
         "start": {
-<<<<<<< HEAD
           "column": 22,
           "line": 29
-=======
-          "column": 24,
-          "line": 65
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!All services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 36
-=======
-          "line": 72
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.all",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 33
-=======
-          "column": 27,
-          "line": 69
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Custom Services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 40
-=======
-          "line": 76
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.custom",
         "start": {
-<<<<<<< HEAD
           "column": 17,
           "line": 37
-=======
-          "column": 23,
-          "line": 73
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Sorry, but no service matched your search term - but you can still probably add it using the \"Custom Website\" option:",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 44
-=======
-          "line": 80
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.nothingFound",
         "start": {
-<<<<<<< HEAD
           "column": 16,
           "line": 41
-=======
-          "column": 15,
-          "line": 77
-        }
-      },
-      {
-        "defaultMessage": "!!!When enabled, a service will be shut down after a period of time to save system resources.",
-        "end": {
-          "column": 3,
-          "line": 84
-        },
-        "file": "src/components/settings/services/EditServiceForm.js",
-        "id": "settings.service.form.isHibernatedEnabledInfo",
-        "start": {
-          "column": 28,
-          "line": 81
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Service successfully added",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 48
-=======
-          "line": 88
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.servicesSuccessfulAddedInfo",
         "start": {
-<<<<<<< HEAD
           "column": 31,
           "line": 45
-=======
-          "column": 25,
-          "line": 85
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Missing a service?",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 52
-=======
-          "line": 92
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.missingService",
         "start": {
           "column": 18,
-<<<<<<< HEAD
           "line": 49
-=======
-          "line": 89
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!To add a custom service, copy the recipe folder into:",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 56
-=======
-          "line": 96
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.intro",
         "start": {
-<<<<<<< HEAD
           "column": 21,
           "line": 53
-=======
-          "column": 19,
-          "line": 93
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Open directory",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 60
-=======
-          "line": 100
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.openFolder",
         "start": {
           "column": 14,
-<<<<<<< HEAD
           "line": 57
-=======
-          "line": 97
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Developer Documentation",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 64
-=======
-          "line": 104
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.openDevDocs",
         "start": {
-<<<<<<< HEAD
           "column": 15,
           "line": 61
-=======
-          "column": 14,
-          "line": 101
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Custom 3rd Party Recipes",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 68
-=======
-          "line": 108
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.headline.customRecipes",
         "start": {
-<<<<<<< HEAD
           "column": 25,
           "line": 65
-=======
-          "column": 17,
-          "line": 105
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Community 3rd Party Recipes",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 72
-=======
-          "line": 112
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.headline.communityRecipes",
         "start": {
-<<<<<<< HEAD
           "column": 28,
           "line": 69
-=======
-          "column": 20,
-          "line": 109
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Your Development Service Recipes",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 76
-=======
-          "line": 116
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/recipes/RecipesDashboard.js",
         "id": "settings.recipes.customService.headline.devRecipes",
         "start": {
-<<<<<<< HEAD
           "column": 22,
           "line": 73
-=======
-          "column": 13,
-          "line": 113
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -3396,170 +2844,102 @@
         "defaultMessage": "!!!You will be notified about all new messages in a channel, not just @username, @channel, @here, ...",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 94
-=======
-          "line": 20
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.indirectMessageInfo",
         "start": {
-<<<<<<< HEAD
           "column": 23,
           "line": 91
-=======
-          "column": 12,
-          "line": 17
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!When disabled, all notification sounds and audio playback are muted",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 98
-=======
-          "line": 24
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.isMutedInfo",
         "start": {
-<<<<<<< HEAD
           "column": 15,
           "line": 95
-=======
-          "column": 19,
-          "line": 21
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!You currently have hibernation enabled but you can disable hibernation for individual services using this option.",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 102
-=======
-          "line": 28
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.disableHibernationInfo",
         "start": {
-<<<<<<< HEAD
           "column": 26,
           "line": 99
-=======
-          "column": 20,
-          "line": 25
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Notifications",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 106
-=======
-          "line": 32
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.headlineNotifications",
         "start": {
-<<<<<<< HEAD
           "column": 25,
           "line": 103
-=======
-          "column": 19,
-          "line": 29
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Unread message badges",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 110
-=======
-          "line": 36
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.headlineBadges",
         "start": {
-<<<<<<< HEAD
           "column": 18,
           "line": 107
-=======
-          "column": 22,
-          "line": 33
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!General",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 114
-=======
-          "line": 40
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.headlineGeneral",
         "start": {
-<<<<<<< HEAD
           "column": 19,
           "line": 111
-=======
-          "column": 20,
-          "line": 37
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Dark Reader Settings",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 118
-=======
-          "line": 44
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.headlineDarkReaderSettings",
         "start": {
-<<<<<<< HEAD
           "column": 30,
           "line": 115
-=======
-          "column": 19,
-          "line": 41
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Delete",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 122
-=======
-          "line": 48
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/services/EditServiceForm.js",
         "id": "settings.service.form.iconDelete",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 119
         }
@@ -4611,48 +3991,30 @@
         "start": {
           "column": 20,
           "line": 27
-=======
-          "column": 20,
-          "line": 45
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Your changes have been saved",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 34
-=======
-          "line": 52
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/user/EditUserForm.js",
         "id": "settings.account.successInfo",
         "start": {
-<<<<<<< HEAD
           "column": 15,
           "line": 31
-=======
-          "column": 13,
-          "line": 49
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Update profile",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 38
-=======
-          "line": 56
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/settings/user/EditUserForm.js",
         "id": "settings.account.buttonSave",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 35
         }
@@ -4673,70 +4035,43 @@
         "start": {
           "column": 21,
           "line": 13
-=======
-          "column": 23,
-          "line": 53
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Upgrade your account and get the full Franz experience",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 20
-=======
-          "line": 60
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/SubscriptionForm.js",
         "id": "settings.account.headlineUpgradeAccount",
         "start": {
-<<<<<<< HEAD
           "column": 18,
           "line": 17
-=======
-          "column": 25,
-          "line": 57
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Franz 5 comes with a wide range of new features to boost up your everyday communication - batteries included. Check out our new plans and find out which one suits you most!",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 24
-=======
-          "line": 64
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/SubscriptionForm.js",
         "id": "subscription.teaser.intro",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 21
-=======
-          "column": 23,
-          "line": 61
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Paid Franz Plans include:",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 28
-=======
-          "line": 68
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/SubscriptionForm.js",
         "id": "subscription.teaser.includedFeatures",
         "start": {
-<<<<<<< HEAD
           "column": 20,
           "line": 25
         }
@@ -4757,26 +4092,17 @@
         "start": {
           "column": 16,
           "line": 11
-=======
-          "column": 25,
-          "line": 65
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Done",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 18
-=======
-          "line": 72
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/SubscriptionPopup.js",
         "id": "subscriptionPopup.buttonDone",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 15
         }
@@ -4797,64 +4123,39 @@
         "start": {
           "column": 21,
           "line": 14
-=======
-          "column": 25,
-          "line": 69
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!See all options",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 21
-=======
-          "line": 76
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/TrialForm.js",
         "id": "subscription.cta.allOptions",
         "start": {
-<<<<<<< HEAD
           "column": 20,
           "line": 18
-=======
-          "column": 24,
-          "line": 73
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Get the free 14 day Franz Professional Trial",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 25
-=======
-          "line": 80
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/TrialForm.js",
         "id": "settings.account.headlineTrialUpgrade",
         "start": {
           "column": 18,
-<<<<<<< HEAD
           "line": 22
-=======
-          "line": 77
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!The Franz Professional Plan includes:",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 29
-=======
-          "line": 84
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/TrialForm.js",
         "id": "subscription.includedProFeatures",
@@ -4873,27 +4174,18 @@
         "id": "pricing.trial.terms.headline",
         "start": {
           "column": 29,
-<<<<<<< HEAD
           "line": 30
-=======
-          "line": 81
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!No credit card required",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 37
-=======
-          "line": 88
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/components/subscription/TrialForm.js",
         "id": "pricing.trial.terms.noCreditCard",
         "start": {
-<<<<<<< HEAD
           "column": 16,
           "line": 34
         }
@@ -4909,10 +4201,6 @@
         "start": {
           "column": 21,
           "line": 38
-=======
-          "column": 22,
-          "line": 85
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -5362,13 +4650,13 @@
         "defaultMessage": "!!!Disable hibernation",
         "end": {
           "column": 3,
-          "line": 39
+          "line": 43
         },
         "file": "src/containers/settings/EditServiceScreen.js",
         "id": "settings.service.form.disableHibernation",
         "start": {
           "column": 22,
-          "line": 36
+          "line": 40
         }
       },
       {
@@ -5636,27 +4924,6 @@
           "line": 42
         }
       },
-<<<<<<< HEAD
-=======
-      {
-        "defaultMessage": "!!!Occasional Waiting Screens",
-        "end": {
-          "column": 3,
-          "line": 72
-        },
-        "file": "src/components/ui/FeatureList.js",
-        "id": "pricing.features.appDelaysEnabled",
-        "start": {
-          "column": 19,
-          "line": 69
-        }
-      }
-    ],
-    "path": "src/components/ui/FeatureList.json"
-  },
-  {
-    "descriptors": [
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       {
         "defaultMessage": "!!!Always show Ferdi in system tray",
         "end": {
@@ -5749,495 +5016,288 @@
         }
       },
       {
-<<<<<<< HEAD
         "defaultMessage": "!!!Keep services in hibernation on startup",
-=======
-        "defaultMessage": "!!!Enable hibernation",
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         "end": {
           "column": 3,
           "line": 77
         },
-<<<<<<< HEAD
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.hibernateOnStartup",
         "start": {
           "column": 22,
           "line": 74
-=======
-        "file": "src/containers/settings/EditServiceScreen.js",
-        "id": "settings.service.form.enableHibernation",
-        "start": {
-          "column": 21,
-          "line": 36
-        }
-      },
-      {
-        "defaultMessage": "!!!Enable Notifications",
-        "end": {
-          "column": 3,
-          "line": 43
-        },
-        "file": "src/containers/settings/EditServiceScreen.js",
-        "id": "settings.service.form.enableNotification",
-        "start": {
-          "column": 22,
-          "line": 40
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Hibernation strategy",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 81
-=======
-          "line": 47
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.hibernationStrategy",
         "start": {
-<<<<<<< HEAD
           "column": 23,
           "line": 78
-=======
-          "column": 15,
-          "line": 44
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Todo Server",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 85
-=======
-          "line": 51
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.predefinedTodoServer",
         "start": {
-<<<<<<< HEAD
           "column": 24,
           "line": 82
-=======
-          "column": 15,
-          "line": 48
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Custom TodoServer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 89
-=======
-          "line": 55
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.customTodoServer",
         "start": {
-<<<<<<< HEAD
           "column": 20,
           "line": 86
-=======
-          "column": 8,
-          "line": 52
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable Password Lock",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 93
-=======
-          "line": 59
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.enableLock",
         "start": {
-<<<<<<< HEAD
           "column": 14,
           "line": 90
-=======
-          "column": 13,
-          "line": 56
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Password",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 97
-=======
-          "line": 63
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.lockPassword",
         "start": {
-<<<<<<< HEAD
           "column": 16,
           "line": 94
-=======
-          "column": 20,
-          "line": 60
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Allow using Touch ID to unlock",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 101
-=======
-          "line": 67
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.useTouchIdToUnlock",
         "start": {
-<<<<<<< HEAD
           "column": 22,
           "line": 98
-=======
-          "column": 8,
-          "line": 64
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Lock after inactivity",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 105
-=======
-          "line": 71
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.inactivityLock",
         "start": {
           "column": 18,
-<<<<<<< HEAD
           "line": 102
-=======
-          "line": 68
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable scheduled Do-not-Disturb",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 109
-=======
-          "line": 75
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.scheduledDNDEnabled",
         "start": {
-<<<<<<< HEAD
           "column": 23,
           "line": 106
-=======
-          "column": 15,
-          "line": 72
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!From",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 113
-=======
-          "line": 79
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.scheduledDNDStart",
         "start": {
-<<<<<<< HEAD
           "column": 21,
           "line": 110
-=======
-          "column": 13,
-          "line": 76
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!To",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 117
-=======
-          "line": 83
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.scheduledDNDEnd",
         "start": {
-<<<<<<< HEAD
           "column": 19,
           "line": 114
-=======
-          "column": 13,
-          "line": 80
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Language",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 121
-=======
-          "line": 87
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.language",
         "start": {
-<<<<<<< HEAD
           "column": 12,
           "line": 118
-=======
-          "column": 13,
-          "line": 84
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Dark Mode",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 125
-=======
-          "line": 91
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.darkMode",
         "start": {
-<<<<<<< HEAD
           "column": 12,
           "line": 122
-=======
-          "column": 17,
-          "line": 88
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Synchronize dark mode with my OS's dark mode setting",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 129
-=======
-          "line": 30
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.adaptableDarkMode",
         "start": {
           "column": 21,
-<<<<<<< HEAD
           "line": 126
-=======
-          "line": 27
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable universal Dark Mode",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 133
-=======
-          "line": 34
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.universalDarkMode",
         "start": {
-<<<<<<< HEAD
           "column": 21,
           "line": 130
-=======
-          "column": 26,
-          "line": 31
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Sidebar width",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 137
-=======
-          "line": 38
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.serviceRibbonWidth",
         "start": {
-<<<<<<< HEAD
           "column": 22,
           "line": 134
-=======
-          "column": 19,
-          "line": 35
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Service icon size",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 141
-=======
-          "line": 42
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.iconSize",
         "start": {
-<<<<<<< HEAD
           "column": 12,
           "line": 138
-=======
-          "column": 20,
-          "line": 39
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Use vertical style",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 145
-=======
-          "line": 46
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.useVerticalStyle",
         "start": {
-<<<<<<< HEAD
           "column": 20,
           "line": 142
-=======
-          "column": 24,
-          "line": 43
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Always show workspace drawer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 149
-=======
-          "line": 50
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.alwaysShowWorkspaces",
         "start": {
-<<<<<<< HEAD
           "column": 24,
           "line": 146
-=======
-          "column": 12,
-          "line": 47
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Accent color",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 153
-=======
-          "line": 54
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.accentColor",
         "start": {
-<<<<<<< HEAD
           "column": 15,
           "line": 150
-=======
-          "column": 12,
-          "line": 51
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Display disabled services tabs",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 157
-=======
-          "line": 58
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.showDisabledServices",
         "start": {
           "column": 24,
-<<<<<<< HEAD
           "line": 154
-=======
-          "line": 55
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Show unread message badge when notifications are disabled",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 161
-=======
-          "line": 62
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.showMessagesBadgesWhenMuted",
         "start": {
           "column": 29,
-<<<<<<< HEAD
           "line": 158
         }
       },
@@ -6252,68 +5312,44 @@
         "start": {
           "column": 16,
           "line": 162
-=======
-          "line": 59
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable spell checking",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 169
-=======
-          "line": 66
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.enableSpellchecking",
         "start": {
           "column": 23,
-<<<<<<< HEAD
           "line": 166
-=======
-          "line": 63
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable GPU Acceleration",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 173
-=======
-          "line": 70
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.enableGPUAcceleration",
         "start": {
           "column": 25,
-<<<<<<< HEAD
           "line": 170
-=======
-          "line": 67
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Include beta versions",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 177
-=======
-          "line": 74
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.beta",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 174
         }
       },
@@ -6328,51 +5364,32 @@
         "start": {
           "column": 20,
           "line": 178
-=======
-          "line": 71
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable Franz Todos",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 185
-=======
-          "line": 78
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.enableTodos",
         "start": {
           "column": 15,
-<<<<<<< HEAD
           "line": 182
-=======
-          "line": 75
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Keep all workspaces loaded",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 189
-=======
-          "line": 82
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/containers/settings/EditSettingsScreen.js",
         "id": "settings.app.form.keepAllWorkspacesLoaded",
         "start": {
           "column": 27,
-<<<<<<< HEAD
           "line": 186
-=======
-          "line": 79
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -7169,76 +6186,6 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "!!!Home",
-        "end": {
-          "column": 3,
-          "line": 16
-        },
-        "file": "src/features/recipeConnectionLost/components/WebControls.js",
-        "id": "webControls.goHome",
-        "start": {
-          "column": 10,
-          "line": 13
-        }
-      },
-      {
-        "defaultMessage": "!!!Open in Browser",
-        "end": {
-          "column": 3,
-          "line": 20
-        },
-        "file": "src/features/recipeConnectionLost/components/WebControls.js",
-        "id": "webControls.openInBrowser",
-        "start": {
-          "column": 17,
-          "line": 17
-        }
-      },
-      {
-        "defaultMessage": "!!!Back",
-        "end": {
-          "column": 3,
-          "line": 24
-        },
-        "file": "src/features/recipeConnectionLost/components/WebControls.js",
-        "id": "webControls.back",
-        "start": {
-          "column": 8,
-          "line": 21
-        }
-      },
-      {
-        "defaultMessage": "!!!Forward",
-        "end": {
-          "column": 3,
-          "line": 28
-        },
-        "file": "src/features/recipeConnectionLost/components/WebControls.js",
-        "id": "webControls.forward",
-        "start": {
-          "column": 11,
-          "line": 25
-        }
-      },
-      {
-        "defaultMessage": "!!!Reload",
-        "end": {
-          "column": 3,
-          "line": 32
-        },
-        "file": "src/features/recipeConnectionLost/components/WebControls.js",
-        "id": "webControls.reload",
-        "start": {
-          "column": 10,
-          "line": 29
-        }
-      }
-    ],
-    "path": "src/features/recipeConnectionLost/components/WebControls.json"
-  },
-  {
-    "descriptors": [
-      {
         "defaultMessage": "!!!Changes in Franz {version}",
         "end": {
           "column": 3,
@@ -7387,63 +6334,39 @@
         "defaultMessage": "!!!Franz Todos are available to premium users now!",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 34
-=======
-          "line": 20
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/features/todos/components/TodosWebview.js",
         "id": "feature.todos.premium.info",
         "start": {
           "column": 15,
-<<<<<<< HEAD
           "line": 31
-=======
-          "line": 17
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Upgrade Account",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 38
-=======
-          "line": 24
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/features/todos/components/TodosWebview.js",
         "id": "feature.todos.premium.upgrade",
         "start": {
           "column": 14,
-<<<<<<< HEAD
           "line": 35
-=======
-          "line": 21
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Everyone else will have to wait a little longer.",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 42
-=======
-          "line": 28
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/features/todos/components/TodosWebview.js",
         "id": "feature.todos.premium.rollout",
         "start": {
           "column": 15,
-<<<<<<< HEAD
           "line": 39
-=======
-          "line": 25
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],
@@ -8755,7 +7678,7 @@
         "defaultMessage": "!!!Reload ToDos",
         "end": {
           "column": 3,
-          "line": 145
+          "line": 121
         },
         "file": "src/lib/Menu.js",
         "id": "menu.view.reloadTodos",
@@ -8768,129 +7691,84 @@
         "defaultMessage": "!!!Minimize",
         "end": {
           "column": 3,
-          "line": 125
+          "line": 145
         },
         "file": "src/lib/Menu.js",
         "id": "menu.window.minimize",
         "start": {
           "column": 12,
-<<<<<<< HEAD
           "line": 142
-=======
-          "line": 122
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Close",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 149
-=======
-          "line": 129
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.window.close",
         "start": {
           "column": 9,
-<<<<<<< HEAD
           "line": 146
-=======
-          "line": 126
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Learn More",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 153
-=======
-          "line": 133
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.learnMore",
         "start": {
           "column": 13,
-<<<<<<< HEAD
           "line": 150
-=======
-          "line": 130
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Changelog",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 157
-=======
-          "line": 137
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.changelog",
         "start": {
           "column": 13,
-<<<<<<< HEAD
           "line": 154
-=======
-          "line": 134
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Support",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 161
-=======
-          "line": 141
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.support",
         "start": {
           "column": 11,
-<<<<<<< HEAD
           "line": 158
-=======
-          "line": 138
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Copy Debug Information",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 165
-=======
-          "line": 145
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.debugInfo",
         "start": {
           "column": 13,
-<<<<<<< HEAD
           "line": 162
-=======
-          "line": 142
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Publish Debug Information",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 169
         },
         "file": "src/lib/Menu.js",
@@ -8905,36 +7783,24 @@
         "end": {
           "column": 3,
           "line": 173
-=======
-          "line": 149
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.debugInfoCopiedHeadline",
         "start": {
           "column": 27,
-<<<<<<< HEAD
           "line": 170
-=======
-          "line": 146
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Your Debug Information has been copied to your clipboard.",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 177
-=======
-          "line": 153
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.debugInfoCopiedBody",
         "start": {
           "column": 23,
-<<<<<<< HEAD
           "line": 174
         }
       },
@@ -8962,299 +7828,187 @@
         "start": {
           "column": 17,
           "line": 182
-=======
-          "line": 150
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Terms of Service",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 189
-=======
-          "line": 157
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.tos",
         "start": {
           "column": 7,
-<<<<<<< HEAD
           "line": 186
-=======
-          "line": 154
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Privacy Statement",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 193
-=======
-          "line": 161
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help.privacy",
         "start": {
           "column": 11,
-<<<<<<< HEAD
           "line": 190
-=======
-          "line": 158
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!File",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 197
-=======
-          "line": 165
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.file",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 194
-=======
-          "line": 162
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!View",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 201
-=======
-          "line": 169
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.view",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 198
-=======
-          "line": 166
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Services",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 205
-=======
-          "line": 173
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.services",
         "start": {
           "column": 12,
-<<<<<<< HEAD
           "line": 202
-=======
-          "line": 170
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Window",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 209
-=======
-          "line": 177
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.window",
         "start": {
           "column": 10,
-<<<<<<< HEAD
           "line": 206
-=======
-          "line": 174
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Help",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 213
-=======
-          "line": 181
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.help",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 210
-=======
-          "line": 178
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!About Ferdi",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 217
-=======
-          "line": 185
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.about",
         "start": {
           "column": 9,
-<<<<<<< HEAD
           "line": 214
-=======
-          "line": 182
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!What's new?",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 221
-=======
-          "line": 189
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.announcement",
         "start": {
           "column": 16,
-<<<<<<< HEAD
           "line": 218
-=======
-          "line": 186
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Settings",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 225
-=======
-          "line": 193
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.settings",
         "start": {
           "column": 12,
-<<<<<<< HEAD
           "line": 222
-=======
-          "line": 190
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Check for updates",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 229
-=======
-          "line": 197
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.checkForUpdates",
         "start": {
           "column": 19,
-<<<<<<< HEAD
           "line": 226
-=======
-          "line": 194
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Hide",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 233
-=======
-          "line": 201
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.hide",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 230
-=======
-          "line": 198
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Hide Others",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 237
-=======
-          "line": 205
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.hideOthers",
         "start": {
           "column": 14,
-<<<<<<< HEAD
           "line": 234
-=======
-          "line": 202
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Unhide",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 241
-=======
-          "line": 209
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.unhide",
         "start": {
           "column": 10,
-<<<<<<< HEAD
           "line": 238
         }
       },
@@ -9269,345 +8023,214 @@
         "start": {
           "column": 19,
           "line": 242
-=======
-          "line": 206
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Quit",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 249
-=======
-          "line": 213
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.app.quit",
         "start": {
           "column": 8,
-<<<<<<< HEAD
           "line": 246
-=======
-          "line": 210
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Add New Service...",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 253
-=======
-          "line": 217
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.services.addNewService",
         "start": {
           "column": 17,
-<<<<<<< HEAD
           "line": 250
-=======
-          "line": 214
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Add New Workspace...",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 257
-=======
-          "line": 221
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.workspaces.addNewWorkspace",
         "start": {
           "column": 19,
-<<<<<<< HEAD
           "line": 254
-=======
-          "line": 218
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Open workspace drawer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 261
-=======
-          "line": 225
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.workspaces.openWorkspaceDrawer",
         "start": {
           "column": 23,
-<<<<<<< HEAD
           "line": 258
-=======
-          "line": 222
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Close workspace drawer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 265
-=======
-          "line": 229
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.workspaces.closeWorkspaceDrawer",
         "start": {
           "column": 24,
-<<<<<<< HEAD
           "line": 262
-=======
-          "line": 226
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Activate next service...",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 269
-=======
-          "line": 233
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.services.setNextServiceActive",
         "start": {
           "column": 23,
-<<<<<<< HEAD
           "line": 266
-=======
-          "line": 230
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Activate previous service...",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 273
-=======
-          "line": 237
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.services.activatePreviousService",
         "start": {
           "column": 27,
-<<<<<<< HEAD
           "line": 270
-=======
-          "line": 234
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Disable notifications & audio",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 277
-=======
-          "line": 241
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "sidebar.muteApp",
         "start": {
           "column": 11,
-<<<<<<< HEAD
           "line": 274
-=======
-          "line": 238
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable notifications & audio",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 281
-=======
-          "line": 245
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "sidebar.unmuteApp",
         "start": {
           "column": 13,
-<<<<<<< HEAD
           "line": 278
-=======
-          "line": 242
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Workspaces",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 285
-=======
-          "line": 249
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.workspaces",
         "start": {
           "column": 14,
-<<<<<<< HEAD
           "line": 282
-=======
-          "line": 246
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Default",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 289
-=======
-          "line": 253
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.workspaces.defaultWorkspace",
         "start": {
           "column": 20,
-<<<<<<< HEAD
           "line": 286
-=======
-          "line": 250
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Todos",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 293
-=======
-          "line": 257
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.todos",
         "start": {
           "column": 9,
-<<<<<<< HEAD
           "line": 290
-=======
-          "line": 254
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Open Todos drawer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 297
-=======
-          "line": 261
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.Todoss.openTodosDrawer",
         "start": {
           "column": 19,
-<<<<<<< HEAD
           "line": 294
-=======
-          "line": 258
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Close Todos drawer",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 301
-=======
-          "line": 265
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.Todoss.closeTodosDrawer",
         "start": {
           "column": 20,
-<<<<<<< HEAD
           "line": 298
-=======
-          "line": 262
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Enable Todos",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 305
-=======
-          "line": 269
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.todos.enableTodos",
         "start": {
           "column": 15,
-<<<<<<< HEAD
           "line": 302
-=======
-          "line": 266
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       },
       {
         "defaultMessage": "!!!Home",
         "end": {
           "column": 3,
-<<<<<<< HEAD
           "line": 309
-=======
-          "line": 273
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         },
         "file": "src/lib/Menu.js",
         "id": "menu.services.goHome",
         "start": {
           "column": 17,
-<<<<<<< HEAD
           "line": 306
-=======
-          "line": 270
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         }
       }
     ],

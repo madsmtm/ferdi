@@ -2,11 +2,7 @@ directories:
   app: ./build
   output: ./out
 
-<<<<<<< HEAD
 appId: "com.kytwb.ferdi"
-=======
-appId: com.meetfranz.franz
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 compression: maximum
 
@@ -16,38 +12,23 @@ mac:
   category: public.app-category.productivity
   icon: ./build-helpers/images/icon.icns
   darkModeSupport: true
-<<<<<<< HEAD
   entitlements: "./build-helpers/entitlements.mas.plist"
   entitlementsInherit: "./build-helpers/entitlements.mas.inherit.plist"
   extendInfo:
-    NSMicrophoneUsageDescription: "This app requires camera access for video messaging services."
-    NSCameraUsageDescription: "This app requires microphone access for audio messaging services."
-
-afterSign: ./build-helpers/notarize.js
-=======
-  hardenedRuntime: true
-  gatekeeperAssess: false
-  entitlements: build-helpers/default.entitlements.mac.plist
-  entitlementsInherit: build-helpers/default.entitlements.mac.plist
-  extendInfo:
     NSCameraUsageDescription: "This app requires camera access for video chats"
     NSMicrophoneUsageDescription: "This app requires microphone access for voice chats"
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 dmg:
   background: ./build-helpers/images/dmgInstaller.tiff
   icon: ./build-helpers/images/icon.icns
   iconSize: 128
-<<<<<<< HEAD
   contents:
     [
       { x: 380, y: 240, type: link, path: /Applications },
       { x: 122, y: 240, type: file },
     ]
-=======
-  contents: [{x: 380, y: 240, type: link, path: /Applications}, {x: 122, y: 240, type: file}]
-  sign: false
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+
+afterSign: ./build-helpers/notarize.js
 
 win:
   icon: ./build-helpers/images/icon.ico
@@ -61,15 +42,9 @@ win:
 linux:
   icon: ./build-helpers/images/icons
   category: Network;InstantMessaging;
-<<<<<<< HEAD
   executableName: ferdi
-  synopsis: "Messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more."
-  description: "Ferdi is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Ferdi currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more. You can download Ferdi for free for Mac & Windows."
-=======
-  executableName: franz
   synopsis: "Messaging app for WhatsApp, Slack, Telegram, Gmail, Hangouts and many many more."
-  description: "Franz is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Franz currently supports Slack, WhatsApp, Gmail, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more. You can download Franz for free for Mac & Windows."
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+  description: "Ferdi is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Ferdi currently supports Slack, WhatsApp, Gmail, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more. You can download Ferdi for free for Mac & Windows."
   target:
     - target: AppImage
     - target: deb
@@ -85,11 +60,6 @@ protocols:
   schemes: [ferdi]
 
 asarUnpack:
-<<<<<<< HEAD
   - ./recipes
-=======
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   - ./node_modules/mac-screen-capture-permissions
   - ./assets/images/taskbar
-
-afterSign: ./build-helpers/afterSign.js

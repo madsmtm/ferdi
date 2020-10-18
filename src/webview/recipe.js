@@ -2,11 +2,7 @@
 import { ipcRenderer, remote, desktopCapturer } from 'electron';
 import path from 'path';
 import { autorun, computed, observable } from 'mobx';
-<<<<<<< HEAD
 import fs from 'fs-extra';
-import { loadModule } from 'cld3-asm';
-=======
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 import { debounce } from 'lodash';
 import { FindInPage } from 'electron-find';
 
@@ -159,9 +155,6 @@ class RecipeController {
 
     debug('Send "hello" to host');
     setTimeout(() => ipcRenderer.sendToHost('hello'), 100);
-<<<<<<< HEAD
-    await spellchecker();
-=======
 
     this.spellcheckingProvider = null;
     contextMenu(
@@ -170,7 +163,6 @@ class RecipeController {
       () => this.spellcheckerLanguage,
     );
 
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     autorun(() => this.update());
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -258,13 +250,7 @@ class RecipeController {
       if (spellcheckerLanguage.includes('automatic')) {
         this.automaticLanguageDetection();
         debug('Found `automatic` locale, falling back to user locale until detected', this.settings.app.locale);
-<<<<<<< HEAD
-        spellcheckerLanguage.push(this.settings.app.locale);
-      } else if (this.cldIdentifier) {
-        this.cldIdentifier.destroy();
-=======
         spellcheckerLanguage = this.settings.app.locale;
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
       switchDict(spellcheckerLanguage);
     } else {
@@ -397,24 +383,10 @@ class RecipeController {
       debug('Detecting language for', value);
       const locale = await ipcRenderer.invoke('detect-language', { sample: value });
 
-<<<<<<< HEAD
-      debug('Language detection result', findResult);
-
-      if (findResult.is_reliable) {
-        const spellcheckerLocale = getSpellcheckerLocaleByFuzzyIdentifier(findResult.language);
-        debug('Language detected reliably, setting spellchecker language to', spellcheckerLocale);
-        if (spellcheckerLocale) {
-          switchDict([
-            ...this.spellcheckerLanguage,
-            spellcheckerLocale,
-          ]);
-        }
-=======
       const spellcheckerLocale = getSpellcheckerLocaleByFuzzyIdentifier(locale);
       debug('Language detected reliably, setting spellchecker language to', spellcheckerLocale);
       if (spellcheckerLocale) {
         switchDict(spellcheckerLocale);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
     }, 225));
   }

@@ -1,12 +1,7 @@
 {
   "name": "@meetfranz/ui",
-<<<<<<< HEAD
-  "version": "1.0.0",
-  "description": "React UI components for Ferdi",
-=======
   "version": "1.1.0",
   "description": "React UI components for Franz",
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   "main": "lib/index.js",
   "scripts": {
     "dev": "tsc -w",

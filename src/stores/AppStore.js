@@ -26,14 +26,10 @@ import { sleep } from '../helpers/async-helpers';
 const debug = require('debug')('Ferdi:AppStore');
 
 const {
-<<<<<<< HEAD
-  app, nativeTheme, screen, powerMonitor,
-=======
   app,
   screen,
   powerMonitor,
   nativeTheme,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 } = remote;
 
 const mainWindow = remote.getCurrentWindow();
@@ -67,13 +63,9 @@ export default class AppStore extends Store {
 
   @observable isOnline = navigator.onLine;
 
-<<<<<<< HEAD
   @observable authRequestFailed = false;
 
-  @observable timeSuspensionStart;
-=======
   @observable timeSuspensionStart = moment();
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
   @observable timeOfflineStart;
 
@@ -255,11 +247,7 @@ export default class AppStore extends Store {
       if (!localStorage.getItem(CATALINA_NOTIFICATION_HACK_KEY)) {
         debug('Triggering macOS Catalina notification permission trigger');
         // eslint-disable-next-line no-new
-<<<<<<< HEAD
         new window.Notification('Welcome to Ferdi 5', {
-=======
-        new window.Notification('Welcome to Franz 5', {
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
           body: 'Have a wonderful day & happy messaging.',
         });
 
@@ -285,9 +273,14 @@ export default class AppStore extends Store {
       ferdi: {
         version: app.getVersion(),
         electron: process.versions.electron,
-<<<<<<< HEAD
-        installedRecipes: this.stores.recipes.all.map(recipe => ({ id: recipe.id, version: recipe.version })),
-        devRecipes: this.stores.recipePreviews.dev.map(recipe => ({ id: recipe.id, version: recipe.version })),
+        installedRecipes: this.stores.recipes.all.map(recipe => ({
+          id: recipe.id,
+          version: recipe.version
+        })),
+        devRecipes: this.stores.recipePreviews.dev.map(recipe => ({
+          id: recipe.id,
+          version: recipe.version
+        })),
         services: this.stores.services.all.map(service => ({
           id: service.id,
           recipe: service.recipe.id,
@@ -299,25 +292,10 @@ export default class AppStore extends Store {
           isDarkModeEnabled: service.isDarkModeEnabled,
         })),
         messages: this.stores.globalError.messages,
-        workspaces: this.stores.workspaces.workspaces.map(workspace => ({ id: workspace.id, services: workspace.services })),
-=======
-        installedRecipes: this.stores.recipes.all.map(recipe => ({
-          id: recipe.id,
-          version: recipe.version,
+        workspaces: this.stores.workspaces.workspaces.map(workspace => ({ 
+          id: workspace.id, 
+          services: workspace.services 
         })),
-        devRecipes: this.stores.recipePreviews.dev.map(recipe => ({
-          id: recipe.id,
-          version: recipe.version,
-        })),
-        services: this.stores.services.all.map(service => ({
-          id: service.id,
-          recipe: service.recipe.id,
-        })),
-        workspaces: this.stores.workspaces.workspaces.map(workspace => ({
-          id: workspace.id,
-          services: workspace.services,
-        })),
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
         windowSettings: readJsonSync(path.join(app.getPath('userData'), 'window-state.json')),
         settings,
         features: this.stores.features.features,
@@ -464,20 +442,14 @@ export default class AppStore extends Store {
     const allServiceIds = await getServiceIdsFromPartitions();
     const allOrphanedServiceIds = allServiceIds.filter(id => !this.stores.services.all.find(s => id.replace('service-', '') === s.id));
 
-<<<<<<< HEAD
     try {
       await Promise.all(allOrphanedServiceIds.map(id => removeServicePartitionDirectory(id)));
     } catch (ex) {
       console.log('Error while deleting service partition directory - ', ex);
     }
-    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({ serviceId: s.id })));
-=======
-    await Promise.all(allOrphanedServiceIds.map(id => removeServicePartitionDirectory(id)));
-
-    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({
-      serviceId: s.id,
+    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({ 
+      serviceId: s.id 
     })));
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
     await clearAppCache._promise;
 

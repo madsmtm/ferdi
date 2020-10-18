@@ -407,11 +407,11 @@
     "defaultMessage": "!!!Reload ToDos",
     "file": "src/lib/Menu.js",
     "start": {
-      "line": 118,
+      "line": 142,
       "column": 15
     },
     "end": {
-      "line": 121,
+      "line": 145,
       "column": 3
     }
   },
@@ -420,19 +420,11 @@
     "defaultMessage": "!!!Minimize",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 142,
+      "line": 146,
       "column": 12
     },
     "end": {
-      "line": 145,
-=======
-      "line": 122,
-      "column": 12
-    },
-    "end": {
-      "line": 125,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 149,
       "column": 3
     }
   },
@@ -441,19 +433,11 @@
     "defaultMessage": "!!!Close",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 146,
+      "line": 150,
       "column": 9
     },
     "end": {
-      "line": 149,
-=======
-      "line": 126,
-      "column": 9
-    },
-    "end": {
-      "line": 129,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 153,
       "column": 3
     }
   },
@@ -462,19 +446,11 @@
     "defaultMessage": "!!!Learn More",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 150,
+      "line": 154,
       "column": 13
     },
     "end": {
-      "line": 153,
-=======
-      "line": 130,
-      "column": 13
-    },
-    "end": {
-      "line": 133,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 157,
       "column": 3
     }
   },
@@ -483,19 +459,11 @@
     "defaultMessage": "!!!Changelog",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 154,
+      "line": 158,
       "column": 13
     },
     "end": {
-      "line": 157,
-=======
-      "line": 134,
-      "column": 13
-    },
-    "end": {
-      "line": 137,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 161,
       "column": 3
     }
   },
@@ -504,19 +472,11 @@
     "defaultMessage": "!!!Support",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 158,
+      "line": 162,
       "column": 11
     },
     "end": {
-      "line": 161,
-=======
-      "line": 138,
-      "column": 11
-    },
-    "end": {
-      "line": 141,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 165,
       "column": 3
     }
   },
@@ -525,12 +485,11 @@
     "defaultMessage": "!!!Copy Debug Information",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 162,
+      "line": 166,
       "column": 13
     },
     "end": {
-      "line": 165,
+      "line": 169,
       "column": 3
     }
   },
@@ -539,18 +498,11 @@
     "defaultMessage": "!!!Publish Debug Information",
     "file": "src/lib/Menu.js",
     "start": {
-      "line": 166,
+      "line": 170,
       "column": 20
     },
     "end": {
-      "line": 169,
-=======
-      "line": 142,
-      "column": 13
-    },
-    "end": {
-      "line": 145,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 173,
       "column": 3
     }
   },
@@ -559,19 +511,11 @@
     "defaultMessage": "!!!Ferdi Debug Information",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 170,
+      "line": 174,
       "column": 27
     },
     "end": {
-      "line": 173,
-=======
-      "line": 146,
-      "column": 27
-    },
-    "end": {
-      "line": 149,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 177,
       "column": 3
     }
   },
@@ -580,12 +524,11 @@
     "defaultMessage": "!!!Your Debug Information has been copied to your clipboard.",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 174,
+      "line": 178,
       "column": 23
     },
     "end": {
-      "line": 177,
+      "line": 181,
       "column": 3
     }
   },
@@ -594,11 +537,11 @@
     "defaultMessage": "!!!Unlock with Touch ID",
     "file": "src/lib/Menu.js",
     "start": {
-      "line": 178,
+      "line": 182,
       "column": 11
     },
     "end": {
-      "line": 181,
+      "line": 185,
       "column": 3
     }
   },
@@ -607,18 +550,11 @@
     "defaultMessage": "!!!unlock via Touch ID",
     "file": "src/lib/Menu.js",
     "start": {
-      "line": 182,
+      "line": 186,
       "column": 17
     },
     "end": {
-      "line": 185,
-=======
-      "line": 150,
-      "column": 23
-    },
-    "end": {
-      "line": 153,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 189,
       "column": 3
     }
   },
@@ -627,19 +563,11 @@
     "defaultMessage": "!!!Terms of Service",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 186,
+      "line": 190,
       "column": 7
     },
     "end": {
-      "line": 189,
-=======
-      "line": 154,
-      "column": 7
-    },
-    "end": {
-      "line": 157,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 193,
       "column": 3
     }
   },
@@ -648,19 +576,11 @@
     "defaultMessage": "!!!Privacy Statement",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 190,
+      "line": 194,
       "column": 11
     },
     "end": {
-      "line": 193,
-=======
-      "line": 158,
-      "column": 11
-    },
-    "end": {
-      "line": 161,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 197,
       "column": 3
     }
   },
@@ -669,19 +589,11 @@
     "defaultMessage": "!!!File",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 194,
+      "line": 198,
       "column": 8
     },
     "end": {
-      "line": 197,
-=======
-      "line": 162,
-      "column": 8
-    },
-    "end": {
-      "line": 165,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 201,
       "column": 3
     }
   },
@@ -690,19 +602,11 @@
     "defaultMessage": "!!!View",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 198,
+      "line": 202,
       "column": 8
     },
     "end": {
-      "line": 201,
-=======
-      "line": 166,
-      "column": 8
-    },
-    "end": {
-      "line": 169,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 205,
       "column": 3
     }
   },
@@ -711,19 +615,11 @@
     "defaultMessage": "!!!Services",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 202,
+      "line": 206,
       "column": 12
     },
     "end": {
-      "line": 205,
-=======
-      "line": 170,
-      "column": 12
-    },
-    "end": {
-      "line": 173,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 209,
       "column": 3
     }
   },
@@ -732,19 +628,11 @@
     "defaultMessage": "!!!Window",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 206,
+      "line": 210,
       "column": 10
     },
     "end": {
-      "line": 209,
-=======
-      "line": 174,
-      "column": 10
-    },
-    "end": {
-      "line": 177,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 213,
       "column": 3
     }
   },
@@ -753,19 +641,11 @@
     "defaultMessage": "!!!Help",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 210,
+      "line": 214,
       "column": 8
     },
     "end": {
-      "line": 213,
-=======
-      "line": 178,
-      "column": 8
-    },
-    "end": {
-      "line": 181,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 217,
       "column": 3
     }
   },
@@ -774,19 +654,11 @@
     "defaultMessage": "!!!About Ferdi",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 214,
+      "line": 218,
       "column": 9
     },
     "end": {
-      "line": 217,
-=======
-      "line": 182,
-      "column": 9
-    },
-    "end": {
-      "line": 185,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 221,
       "column": 3
     }
   },
@@ -795,19 +667,11 @@
     "defaultMessage": "!!!What's new?",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 218,
+      "line": 222,
       "column": 16
     },
     "end": {
-      "line": 221,
-=======
-      "line": 186,
-      "column": 16
-    },
-    "end": {
-      "line": 189,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 225,
       "column": 3
     }
   },
@@ -816,19 +680,11 @@
     "defaultMessage": "!!!Settings",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 222,
+      "line": 226,
       "column": 12
     },
     "end": {
-      "line": 225,
-=======
-      "line": 190,
-      "column": 12
-    },
-    "end": {
-      "line": 193,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 229,
       "column": 3
     }
   },
@@ -837,19 +693,11 @@
     "defaultMessage": "!!!Check for updates",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 226,
+      "line": 230,
       "column": 19
     },
     "end": {
-      "line": 229,
-=======
-      "line": 194,
-      "column": 19
-    },
-    "end": {
-      "line": 197,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 233,
       "column": 3
     }
   },
@@ -858,19 +706,11 @@
     "defaultMessage": "!!!Hide",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 230,
+      "line": 234,
       "column": 8
     },
     "end": {
-      "line": 233,
-=======
-      "line": 198,
-      "column": 8
-    },
-    "end": {
-      "line": 201,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 237,
       "column": 3
     }
   },
@@ -879,19 +719,11 @@
     "defaultMessage": "!!!Hide Others",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 234,
+      "line": 238,
       "column": 14
     },
     "end": {
-      "line": 237,
-=======
-      "line": 202,
-      "column": 14
-    },
-    "end": {
-      "line": 205,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 241,
       "column": 3
     }
   },
@@ -900,12 +732,11 @@
     "defaultMessage": "!!!Unhide",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 238,
+      "line": 242,
       "column": 10
     },
     "end": {
-      "line": 241,
+      "line": 245,
       "column": 3
     }
   },
@@ -914,18 +745,11 @@
     "defaultMessage": "!!!Auto-hide menu bar",
     "file": "src/lib/Menu.js",
     "start": {
-      "line": 242,
+      "line": 246,
       "column": 19
     },
     "end": {
-      "line": 245,
-=======
-      "line": 206,
-      "column": 10
-    },
-    "end": {
-      "line": 209,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 249,
       "column": 3
     }
   },
@@ -934,19 +758,11 @@
     "defaultMessage": "!!!Quit",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 246,
+      "line": 250,
       "column": 8
     },
     "end": {
-      "line": 249,
-=======
-      "line": 210,
-      "column": 8
-    },
-    "end": {
-      "line": 213,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 253,
       "column": 3
     }
   },
@@ -955,19 +771,11 @@
     "defaultMessage": "!!!Add New Service...",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 250,
+      "line": 254,
       "column": 17
     },
     "end": {
-      "line": 253,
-=======
-      "line": 214,
-      "column": 17
-    },
-    "end": {
-      "line": 217,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 257,
       "column": 3
     }
   },
@@ -976,19 +784,11 @@
     "defaultMessage": "!!!Add New Workspace...",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 254,
+      "line": 258,
       "column": 19
     },
     "end": {
-      "line": 257,
-=======
-      "line": 218,
-      "column": 19
-    },
-    "end": {
-      "line": 221,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 261,
       "column": 3
     }
   },
@@ -997,19 +797,11 @@
     "defaultMessage": "!!!Open workspace drawer",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 258,
+      "line": 262,
       "column": 23
     },
     "end": {
-      "line": 261,
-=======
-      "line": 222,
-      "column": 23
-    },
-    "end": {
-      "line": 225,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 265,
       "column": 3
     }
   },
@@ -1018,19 +810,11 @@
     "defaultMessage": "!!!Close workspace drawer",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 262,
+      "line": 266,
       "column": 24
     },
     "end": {
-      "line": 265,
-=======
-      "line": 226,
-      "column": 24
-    },
-    "end": {
-      "line": 229,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 269,
       "column": 3
     }
   },
@@ -1039,19 +823,11 @@
     "defaultMessage": "!!!Activate next service...",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 266,
+      "line": 270,
       "column": 23
     },
     "end": {
-      "line": 269,
-=======
-      "line": 230,
-      "column": 23
-    },
-    "end": {
-      "line": 233,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 273,
       "column": 3
     }
   },
@@ -1060,19 +836,11 @@
     "defaultMessage": "!!!Activate previous service...",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 270,
+      "line": 274,
       "column": 27
     },
     "end": {
-      "line": 273,
-=======
-      "line": 234,
-      "column": 27
-    },
-    "end": {
-      "line": 237,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 277,
       "column": 3
     }
   },
@@ -1081,19 +849,11 @@
     "defaultMessage": "!!!Disable notifications & audio",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 274,
+      "line": 278,
       "column": 11
     },
     "end": {
-      "line": 277,
-=======
-      "line": 238,
-      "column": 11
-    },
-    "end": {
-      "line": 241,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 281,
       "column": 3
     }
   },
@@ -1102,19 +862,11 @@
     "defaultMessage": "!!!Enable notifications & audio",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 278,
+      "line": 282,
       "column": 13
     },
     "end": {
-      "line": 281,
-=======
-      "line": 242,
-      "column": 13
-    },
-    "end": {
-      "line": 245,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 285,
       "column": 3
     }
   },
@@ -1123,19 +875,11 @@
     "defaultMessage": "!!!Workspaces",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 282,
+      "line": 286,
       "column": 14
     },
     "end": {
-      "line": 285,
-=======
-      "line": 246,
-      "column": 14
-    },
-    "end": {
-      "line": 249,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 289,
       "column": 3
     }
   },
@@ -1144,19 +888,11 @@
     "defaultMessage": "!!!Default",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 286,
+      "line": 290,
       "column": 20
     },
     "end": {
-      "line": 289,
-=======
-      "line": 250,
-      "column": 20
-    },
-    "end": {
-      "line": 253,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 293,
       "column": 3
     }
   },
@@ -1165,19 +901,11 @@
     "defaultMessage": "!!!Todos",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 290,
+      "line": 294,
       "column": 9
     },
     "end": {
-      "line": 293,
-=======
-      "line": 254,
-      "column": 9
-    },
-    "end": {
-      "line": 257,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 297,
       "column": 3
     }
   },
@@ -1186,19 +914,11 @@
     "defaultMessage": "!!!Open Todos drawer",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 294,
+      "line": 298,
       "column": 19
     },
     "end": {
-      "line": 297,
-=======
-      "line": 258,
-      "column": 19
-    },
-    "end": {
-      "line": 261,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 301,
       "column": 3
     }
   },
@@ -1207,19 +927,11 @@
     "defaultMessage": "!!!Close Todos drawer",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 298,
+      "line": 302,
       "column": 20
     },
     "end": {
-      "line": 301,
-=======
-      "line": 262,
-      "column": 20
-    },
-    "end": {
-      "line": 265,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 305,
       "column": 3
     }
   },
@@ -1228,19 +940,11 @@
     "defaultMessage": "!!!Enable Todos",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 302,
+      "line": 306,
       "column": 15
     },
     "end": {
-      "line": 305,
-=======
-      "line": 266,
-      "column": 15
-    },
-    "end": {
-      "line": 269,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 309,
       "column": 3
     }
   },
@@ -1249,19 +953,11 @@
     "defaultMessage": "!!!Home",
     "file": "src/lib/Menu.js",
     "start": {
-<<<<<<< HEAD
-      "line": 306,
+      "line": 310,
       "column": 17
     },
     "end": {
-      "line": 309,
-=======
-      "line": 270,
-      "column": 17
-    },
-    "end": {
-      "line": 273,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 313,
       "column": 3
     }
   }

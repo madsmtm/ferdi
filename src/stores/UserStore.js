@@ -237,13 +237,7 @@ export default class UserStore extends Store {
 
     this._setUserData(authToken);
 
-<<<<<<< HEAD
-    this.stores.router.push('/');
-=======
     this.stores.router.push(this.SETUP_ROUTE);
-
-    gaEvent('User', 'signup');
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   }
 
   @action async _retrievePassword({ email }) {

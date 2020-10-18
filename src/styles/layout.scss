@@ -39,7 +39,11 @@ html { overflow: hidden; }
         color: $theme-brand-primary;
       }
 
-<<<<<<< HEAD
+      &:disabled {
+        opacity: 0.25;
+        filter: grayscale(1);
+      }
+
       .update-available { 
         align-items: center;
         background: $theme-brand-danger;
@@ -59,11 +63,6 @@ html { overflow: hidden; }
         animation-name: pulse-danger;
         animation-duration: 0.75s;
         animation-iteration-count: 6;
-=======
-      &:disabled {
-        opacity: 0.25;
-        filter: grayscale(1);
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
       }
     }
   }

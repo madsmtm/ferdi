@@ -101,11 +101,7 @@ export const DEFAULT_APP_SETTINGS = {
   showMessageBadgeWhenMuted: true,
   showDragArea: false,
   enableSpellchecking: true,
-<<<<<<< HEAD
-  spellcheckerLanguage: '["en-US"]',
-=======
   spellcheckerLanguage: 'en-us',
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   darkMode: process.platform === 'darwin' ? nativeTheme.shouldUseDarkColors : false, // We can't use refs from `./environment` at this time
   locale: '',
   fallbackLocale: 'en-US',
@@ -165,13 +161,8 @@ export const DEFAULT_WINDOW_OPTIONS = {
   y: 0,
 };
 
-<<<<<<< HEAD
 export const FRANZ_SERVICE_REQUEST = 'https://github.com/getferdi/recipes/issues';
 export const FRANZ_TRANSLATION = 'https://crowdin.com/project/getferdi';
-=======
-export const FRANZ_SERVICE_REQUEST = 'https://bit.ly/franz-service-request-support';
-export const FRANZ_TRANSLATION = 'https://bit.ly/franz-translate';
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 export const FRANZ_DEV_DOCS = 'http://bit.ly/franz-dev-hub';
 
 export const FILE_SYSTEM_SETTINGS_TYPES = [
@@ -179,7 +170,6 @@ export const FILE_SYSTEM_SETTINGS_TYPES = [
   'proxy',
 ];
 
-<<<<<<< HEAD
 export const LOCAL_SERVER = 'You are using Ferdi without a server';
 export const SERVER_NOT_LOADED = 'Ferdi::SERVER_NOT_LOADED';
 
@@ -193,15 +183,6 @@ if (process.env.FERDI_APPDATA_DIR != null) {
 } else if (process.platform === 'win32') {
   app.setPath('appData', process.env.APPDATA);
   app.setPath('userData', path.join(app.getPath('appData'), app.name));
-=======
-// Set app directory before loading user modules
-if (process.env.FRANZ_APPDATA_DIR != null) {
-  app.setPath('appData', process.env.FRANZ_APPDATA_DIR);
-  app.setPath('userData', path.join(app.getPath('appData')));
-} else if (process.platform === 'win32') {
-  app.setPath('appData', process.env.APPDATA);
-  app.setPath('userData', path.join(app.getPath('appData'), app.getName()));
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 }
 
 export const SETTINGS_PATH = path.join(app.getPath('userData'), 'config');

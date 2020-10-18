@@ -95,12 +95,9 @@ export default @inject('stores', 'actions') @observer class Sidebar extends Comp
       isAppMuted,
       isWorkspaceDrawerOpen,
       toggleWorkspaceDrawer,
-<<<<<<< HEAD
       stores,
       actions,
-=======
       isTodosServiceActive,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     } = this.props;
     const { intl } = this.context;
     const todosToggleMessage = (
@@ -119,7 +116,6 @@ export default @inject('stores', 'actions') @observer class Sidebar extends Comp
           enableToolTip={() => this.enableToolTip()}
           disableToolTip={() => this.disableToolTip()}
         />
-<<<<<<< HEAD
         { isLoggedIn ? (
           <>
             { stores.settings.all.app.lockingFeatureEnabled ? (
@@ -190,33 +186,6 @@ export default @inject('stores', 'actions') @observer class Sidebar extends Comp
             to="/auth/welcome"
             className="sidebar__button sidebar__button--new-service"
             data-tip="Login"
-=======
-        {todosStore.isFeatureEnabled && todosStore.isFeatureEnabledByUser ? (
-          <button
-            type="button"
-            onClick={() => {
-              todoActions.toggleTodosPanel();
-              this.updateToolTip();
-              gaEvent(GA_CATEGORY_TODOS, 'toggleDrawer', 'sidebar');
-            }}
-            disabled={isTodosServiceActive}
-            className={`sidebar__button sidebar__button--todos  ${todosStore.isTodosPanelVisible ? 'is-active' : ''}`}
-            data-tip={`${intl.formatMessage(todosToggleMessage)} (${ctrlKey}+T)`}
-          >
-            <i className="mdi mdi-check-all" />
-          </button>
-        ) : null}
-        {workspaceStore.isFeatureEnabled ? (
-          <button
-            type="button"
-            onClick={() => {
-              toggleWorkspaceDrawer();
-              this.updateToolTip();
-              gaEvent(GA_CATEGORY_WORKSPACES, 'toggleDrawer', 'sidebar');
-            }}
-            className={`sidebar__button sidebar__button--workspaces ${isWorkspaceDrawerOpen ? 'is-active' : ''}`}
-            data-tip={`${intl.formatMessage(workspaceToggleMessage)} (${ctrlKey}+D)`}
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
           >
             <i className="mdi mdi-login-variant" />
           </Link>

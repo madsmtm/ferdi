@@ -4,19 +4,11 @@
     "defaultMessage": "!!!Launch Ferdi on start",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 30,
+      "line": 31,
       "column": 21
     },
     "end": {
-      "line": 33,
-=======
-      "line": 27,
-      "column": 21
-    },
-    "end": {
-      "line": 30,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 34,
       "column": 3
     }
   },
@@ -25,19 +17,11 @@
     "defaultMessage": "!!!Open in background",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 34,
+      "line": 35,
       "column": 26
     },
     "end": {
-      "line": 37,
-=======
-      "line": 31,
-      "column": 26
-    },
-    "end": {
-      "line": 34,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 38,
       "column": 3
     }
   },
@@ -46,12 +30,11 @@
     "defaultMessage": "!!!Keep Ferdi in background when closing the window",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 38,
+      "line": 39,
       "column": 19
     },
     "end": {
-      "line": 41,
+      "line": 42,
       "column": 3
     }
   },
@@ -60,18 +43,11 @@
     "defaultMessage": "!!!Start minimized",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 42,
+      "line": 43,
       "column": 18
     },
     "end": {
-      "line": 45,
-=======
-      "line": 35,
-      "column": 19
-    },
-    "end": {
-      "line": 38,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 46,
       "column": 3
     }
   },
@@ -80,12 +56,11 @@
     "defaultMessage": "!!!Always show Ferdi in system tray",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 46,
+      "line": 47,
       "column": 20
     },
     "end": {
-      "line": 49,
+      "line": 50,
       "column": 3
     }
   },
@@ -94,18 +69,11 @@
     "defaultMessage": "!!!Reload Ferdi after system resume",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 50,
+      "line": 51,
       "column": 21
     },
     "end": {
-      "line": 53,
-=======
-      "line": 39,
-      "column": 20
-    },
-    "end": {
-      "line": 42,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 54,
       "column": 3
     }
   },
@@ -114,12 +82,11 @@
     "defaultMessage": "!!!Minimize Ferdi to system tray",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 54,
+      "line": 55,
       "column": 24
     },
     "end": {
-      "line": 57,
+      "line": 58,
       "column": 3
     }
   },
@@ -128,11 +95,24 @@
     "defaultMessage": "!!!Don't show message content in notifications",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 58,
+      "line": 59,
       "column": 24
     },
     "end": {
-      "line": 61,
+      "line": 62,
+      "column": 3
+    }
+  },
+  {
+    "id": "settings.app.form.notifyTaskBarOnMessage",
+    "defaultMessage": "!!!Notify TaskBar/Dock on new message",
+    "file": "src/containers/settings/EditSettingsScreen.js",
+    "start": {
+      "line": 63,
+      "column": 26
+    },
+    "end": {
+      "line": 66,
       "column": 3
     }
   },
@@ -141,11 +121,11 @@
     "defaultMessage": "!!!Navigation bar behaviour",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 62,
+      "line": 67,
       "column": 26
     },
     "end": {
-      "line": 65,
+      "line": 70,
       "column": 3
     }
   },
@@ -154,11 +134,11 @@
     "defaultMessage": "!!!Send telemetry data",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 66,
+      "line": 71,
       "column": 10
     },
     "end": {
-      "line": 69,
+      "line": 74,
       "column": 3
     }
   },
@@ -167,11 +147,11 @@
     "defaultMessage": "!!!Enable service hibernation",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 70,
+      "line": 75,
       "column": 13
     },
     "end": {
-      "line": 73,
+      "line": 78,
       "column": 3
     }
   },
@@ -180,11 +160,11 @@
     "defaultMessage": "!!!Keep services in hibernation on startup",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 74,
+      "line": 79,
       "column": 22
     },
     "end": {
-      "line": 77,
+      "line": 82,
       "column": 3
     }
   },
@@ -193,11 +173,11 @@
     "defaultMessage": "!!!Hibernation strategy",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 78,
+      "line": 83,
       "column": 23
     },
     "end": {
-      "line": 81,
+      "line": 86,
       "column": 3
     }
   },
@@ -206,11 +186,11 @@
     "defaultMessage": "!!!Todo Server",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 82,
+      "line": 87,
       "column": 24
     },
     "end": {
-      "line": 85,
+      "line": 90,
       "column": 3
     }
   },
@@ -219,11 +199,11 @@
     "defaultMessage": "!!!Custom TodoServer",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 86,
+      "line": 91,
       "column": 20
     },
     "end": {
-      "line": 89,
+      "line": 94,
       "column": 3
     }
   },
@@ -232,11 +212,11 @@
     "defaultMessage": "!!!Enable Password Lock",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 90,
+      "line": 95,
       "column": 14
     },
     "end": {
-      "line": 93,
+      "line": 98,
       "column": 3
     }
   },
@@ -245,11 +225,11 @@
     "defaultMessage": "!!!Password",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 94,
+      "line": 99,
       "column": 16
     },
     "end": {
-      "line": 97,
+      "line": 102,
       "column": 3
     }
   },
@@ -258,11 +238,11 @@
     "defaultMessage": "!!!Allow using Touch ID to unlock",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 98,
+      "line": 103,
       "column": 22
     },
     "end": {
-      "line": 101,
+      "line": 106,
       "column": 3
     }
   },
@@ -271,11 +251,11 @@
     "defaultMessage": "!!!Lock after inactivity",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 102,
+      "line": 107,
       "column": 18
     },
     "end": {
-      "line": 105,
+      "line": 110,
       "column": 3
     }
   },
@@ -284,11 +264,11 @@
     "defaultMessage": "!!!Enable scheduled Do-not-Disturb",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 106,
+      "line": 111,
       "column": 23
     },
     "end": {
-      "line": 109,
+      "line": 114,
       "column": 3
     }
   },
@@ -297,11 +277,11 @@
     "defaultMessage": "!!!From",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 110,
+      "line": 115,
       "column": 21
     },
     "end": {
-      "line": 113,
+      "line": 118,
       "column": 3
     }
   },
@@ -310,18 +290,11 @@
     "defaultMessage": "!!!To",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 114,
+      "line": 119,
       "column": 19
     },
     "end": {
-      "line": 117,
-=======
-      "line": 43,
-      "column": 24
-    },
-    "end": {
-      "line": 46,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 122,
       "column": 3
     }
   },
@@ -330,19 +303,11 @@
     "defaultMessage": "!!!Language",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 118,
+      "line": 123,
       "column": 12
     },
     "end": {
-      "line": 121,
-=======
-      "line": 47,
-      "column": 12
-    },
-    "end": {
-      "line": 50,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 126,
       "column": 3
     }
   },
@@ -351,12 +316,11 @@
     "defaultMessage": "!!!Dark Mode",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 122,
+      "line": 127,
       "column": 12
     },
     "end": {
-      "line": 125,
+      "line": 130,
       "column": 3
     }
   },
@@ -365,11 +329,11 @@
     "defaultMessage": "!!!Synchronize dark mode with my OS's dark mode setting",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 126,
+      "line": 131,
       "column": 21
     },
     "end": {
-      "line": 129,
+      "line": 134,
       "column": 3
     }
   },
@@ -378,11 +342,11 @@
     "defaultMessage": "!!!Enable universal Dark Mode",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 130,
+      "line": 135,
       "column": 21
     },
     "end": {
-      "line": 133,
+      "line": 138,
       "column": 3
     }
   },
@@ -391,11 +355,11 @@
     "defaultMessage": "!!!Sidebar width",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 134,
+      "line": 139,
       "column": 22
     },
     "end": {
-      "line": 137,
+      "line": 142,
       "column": 3
     }
   },
@@ -404,11 +368,11 @@
     "defaultMessage": "!!!Service icon size",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 138,
+      "line": 143,
       "column": 12
     },
     "end": {
-      "line": 141,
+      "line": 146,
       "column": 3
     }
   },
@@ -417,11 +381,11 @@
     "defaultMessage": "!!!Use vertical style",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 142,
+      "line": 147,
       "column": 20
     },
     "end": {
-      "line": 145,
+      "line": 150,
       "column": 3
     }
   },
@@ -430,11 +394,11 @@
     "defaultMessage": "!!!Always show workspace drawer",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 146,
+      "line": 151,
       "column": 24
     },
     "end": {
-      "line": 149,
+      "line": 154,
       "column": 3
     }
   },
@@ -443,18 +407,11 @@
     "defaultMessage": "!!!Accent color",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 150,
+      "line": 155,
       "column": 15
     },
     "end": {
-      "line": 153,
-=======
-      "line": 51,
-      "column": 12
-    },
-    "end": {
-      "line": 54,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 158,
       "column": 3
     }
   },
@@ -463,19 +420,11 @@
     "defaultMessage": "!!!Display disabled services tabs",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 154,
+      "line": 159,
       "column": 24
     },
     "end": {
-      "line": 157,
-=======
-      "line": 55,
-      "column": 24
-    },
-    "end": {
-      "line": 58,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 162,
       "column": 3
     }
   },
@@ -484,12 +433,11 @@
     "defaultMessage": "!!!Show unread message badge when notifications are disabled",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 158,
+      "line": 163,
       "column": 29
     },
     "end": {
-      "line": 161,
+      "line": 166,
       "column": 3
     }
   },
@@ -498,18 +446,11 @@
     "defaultMessage": "!!!Show draggable area on window",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 162,
+      "line": 167,
       "column": 16
     },
     "end": {
-      "line": 165,
-=======
-      "line": 59,
-      "column": 29
-    },
-    "end": {
-      "line": 62,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 170,
       "column": 3
     }
   },
@@ -518,19 +459,11 @@
     "defaultMessage": "!!!Enable spell checking",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 166,
+      "line": 171,
       "column": 23
     },
     "end": {
-      "line": 169,
-=======
-      "line": 63,
-      "column": 23
-    },
-    "end": {
-      "line": 66,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 174,
       "column": 3
     }
   },
@@ -539,19 +472,11 @@
     "defaultMessage": "!!!Enable GPU Acceleration",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 170,
+      "line": 175,
       "column": 25
     },
     "end": {
-      "line": 173,
-=======
-      "line": 67,
-      "column": 25
-    },
-    "end": {
-      "line": 70,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 178,
       "column": 3
     }
   },
@@ -560,12 +485,11 @@
     "defaultMessage": "!!!Include beta versions",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 174,
+      "line": 179,
       "column": 8
     },
     "end": {
-      "line": 177,
+      "line": 182,
       "column": 3
     }
   },
@@ -574,18 +498,11 @@
     "defaultMessage": "!!!Enable updates",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-      "line": 178,
+      "line": 183,
       "column": 20
     },
     "end": {
-      "line": 181,
-=======
-      "line": 71,
-      "column": 8
-    },
-    "end": {
-      "line": 74,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 186,
       "column": 3
     }
   },
@@ -594,19 +511,11 @@
     "defaultMessage": "!!!Enable Franz Todos",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 182,
+      "line": 187,
       "column": 15
     },
     "end": {
-      "line": 185,
-=======
-      "line": 75,
-      "column": 15
-    },
-    "end": {
-      "line": 78,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 190,
       "column": 3
     }
   },
@@ -615,19 +524,11 @@
     "defaultMessage": "!!!Keep all workspaces loaded",
     "file": "src/containers/settings/EditSettingsScreen.js",
     "start": {
-<<<<<<< HEAD
-      "line": 186,
+      "line": 191,
       "column": 27
     },
     "end": {
-      "line": 189,
-=======
-      "line": 79,
-      "column": 27
-    },
-    "end": {
-      "line": 82,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
+      "line": 194,
       "column": 3
     }
   }

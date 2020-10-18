@@ -226,7 +226,6 @@ class TodosWebview extends Component {
 
     const { intl } = this.context;
 
-<<<<<<< HEAD
     const isUsingPredefinedTodoServer = stores.settings.all.app.predefinedTodoServer !== 'isUsingCustomTodoService';
     const todoUrl = isUsingPredefinedTodoServer
       ? stores.settings.all.app.predefinedTodoServer
@@ -236,14 +235,11 @@ class TodosWebview extends Component {
       isTodoUrlValid = validURL(todoUrl);
     }
 
-
-=======
     let displayedWidth = isVisible ? width : 0;
     if (isTodosServiceActive) {
       displayedWidth = null;
     }
 
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     return (
       <div
         className={classnames({

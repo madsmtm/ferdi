@@ -10,13 +10,9 @@ import ms from 'ms';
 
 import { observable, autorun } from 'mobx';
 import ServiceModel from '../../../models/Service';
-<<<<<<< HEAD
-import { ctrlKey } from '../../../environment';
-=======
-import { isDevMode, ctrlKey, cmdKey } from '../../../environment';
+import { ctrlKey, cmdKey } from '../../../environment';
 
 const IS_SERVICE_DEBUGGING_ENABLED = (localStorage.getItem('debug') || '').includes('Franz:Service');
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 const { Menu } = remote;
 
@@ -205,7 +201,7 @@ const styles = {
                 •
             </span>
           )}
-          {service.isHibernating && !service.disableHibernation && (
+          {service.isHibernating && !service.isHibernationEnabled && (
             <span className="tab-item__message-count hibernating">
               •
             </span>

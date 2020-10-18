@@ -24,19 +24,11 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
     edit: PropTypes.func.isRequired,
     enable: PropTypes.func.isRequired,
     isActive: PropTypes.bool,
-<<<<<<< HEAD
     stores: PropTypes.shape({
       settings: PropTypes.instanceOf(SettingsStore).isRequired,
     }).isRequired,
-    actions: PropTypes.shape({
-      service: PropTypes.shape({
-        setHibernation: PropTypes.func.isRequired,
-      }).isRequired,
-    }).isRequired,
-=======
     upgrade: PropTypes.func.isRequired,
     isSpellcheckerEnabled: PropTypes.bool.isRequired,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   };
 
   static defaultProps = {
@@ -57,8 +49,6 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
 
   constructor(props) {
     super(props);
-
-    this.startHibernationTimer = this.startHibernationTimer.bind(this);
   }
 
   componentDidMount() {
@@ -70,32 +60,6 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
         }, 100);
       }
     });
-
-    reaction(
-      () => this.props.service.isActive,
-      () => {
-        if (!this.props.service.isActive && this.props.stores.settings.all.app.hibernate) {
-          // Service is inactive - start hibernation countdown
-          this.startHibernationTimer();
-        } else {
-          if (this.hibernationTimer) {
-            // Service is active but we have an active hibernation timer: Clear timeout
-            clearTimeout(this.hibernationTimer);
-          }
-
-          // Service is active, wake up service from hibernation
-          this.props.actions.service.setHibernation({
-            serviceId: this.props.service.id,
-            hibernating: false,
-          });
-        }
-      },
-    );
-
-    // Start hibernation counter if we are in background
-    if (!this.props.service.isActive && this.props.stores.settings.all.app.hibernate) {
-      this.startHibernationTimer();
-    }
   }
 
   componentWillUnmount() {
@@ -115,19 +79,6 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
     });
   };
 
-  startHibernationTimer() {
-    const timerDuration = (Number(this.props.stores.settings.all.app.hibernationStrategy) || 300) * 1000;
-
-    const hibernationTimer = setTimeout(() => {
-      this.props.actions.service.setHibernation({
-        serviceId: this.props.service.id,
-        hibernating: true,
-      });
-    }, timerDuration);
-
-    this.hibernationTimer = hibernationTimer;
-  }
-
   render() {
     const {
       detachService,
@@ -136,12 +87,9 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
       reload,
       edit,
       enable,
-<<<<<<< HEAD
       stores,
-=======
       upgrade,
       isSpellcheckerEnabled,
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     } = this.props;
 
     const {
@@ -203,24 +151,11 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
           </Fragment>
         ) : (
           <>
-            {(!service.isHibernating || service.disableHibernation) ? (
+            {(!service.isHibernating || service.isHibernationEnabled) ? (
               <>
                 {showNavBar && (
                   <WebControlsScreen service={service} />
                 )}
-<<<<<<< HEAD
-                <ServiceWebview
-                  service={service}
-                  setWebviewReference={setWebviewReference}
-                  detachService={detachService}
-                />
-                {/* {service.lostRecipeConnection && (
-                  <ConnectionLostBanner
-                    name={service.name}
-                    reload={reload}
-                  />
-                )} */}
-=======
                 {!service.isHibernating && (
                   <ServiceWebview
                     service={service}
@@ -229,7 +164,6 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
                     isSpellcheckerEnabled={isSpellcheckerEnabled}
                   />
                 )}
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
               </>
             ) : (
               <div>

@@ -1,25 +1,12 @@
-<<<<<<< HEAD
 import { autorun, computed, observable } from 'mobx';
 import { ipcRenderer, remote } from 'electron';
-=======
-import { remote } from 'electron';
-import {
-  computed, observable, autorun,
-} from 'mobx';
-import path from 'path';
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 import normalizeUrl from 'normalize-url';
 import path from 'path';
 
 import userAgent from '../helpers/userAgent-helpers';
-<<<<<<< HEAD
-
-const debug = require('debug')('Ferdi:Service');
-=======
 import { TODOS_RECIPE_ID, todosStore } from '../features/todos';
 
 const debug = require('debug')('Franz:Service');
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
 export const RESTRICTION_TYPES = {
   SERVICE_LIMIT: 0,
@@ -91,15 +78,6 @@ export default class Service {
 
   @observable restrictionType = null;
 
-<<<<<<< HEAD
-  @observable disableHibernation = false;
-
-  @observable lastUsed = Date.now(); // timestamp
-
-  @observable lastPoll = null;
-
-  @observable lastPollAnswer = null;
-=======
   @observable isHibernationEnabled = false;
 
   @observable isHibernating = false;
@@ -109,7 +87,6 @@ export default class Service {
   @observable lastPoll = Date.now();
 
   @observable lastPollAnswer = Date.now();
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
   @observable lostRecipeConnection = false;
 
@@ -162,11 +139,7 @@ export default class Service {
 
     this.spellcheckerLanguage = data.spellcheckerLanguage !== undefined ? data.spellcheckerLanguage : this.spellcheckerLanguage;
 
-<<<<<<< HEAD
-    this.disableHibernation = data.disableHibernation !== undefined ? data.disableHibernation : this.disableHibernation;
-=======
     this.isHibernationEnabled = data.isHibernationEnabled !== undefined ? data.isHibernationEnabled : this.isHibernationEnabled;
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
 
     this.recipe = recipe;
 
@@ -259,30 +232,22 @@ export default class Service {
   }
 
   @computed get userAgent() {
-<<<<<<< HEAD
     let ua = userAgent(this.chromelessUserAgent);
-=======
-    let ua = window.navigator.userAgent;
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     if (typeof this.recipe.overrideUserAgent === 'function') {
       ua = this.recipe.overrideUserAgent();
     }
 
     return ua;
-<<<<<<< HEAD
-=======
   }
 
   @computed get partition() {
     return this.recipe.partition || `persist:service-${this.id}`;
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
   }
 
 
   initializeWebViewEvents({ handleIPCMessage, openWindow, stores }) {
     const webContents = remote.webContents.fromId(this.webview.getWebContentsId());
 
-<<<<<<< HEAD
     // If the recipe has implemented modifyRequestHeaders,
     // Send those headers to ipcMain so that it can be set in session
     if (typeof this.recipe.modifyRequestHeaders === 'function') {
@@ -296,8 +261,6 @@ export default class Service {
       debug(this.name, 'modifyRequestHeaders is not defined in the recipe');
     }
 
-=======
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     const handleUserAgent = (url, forwardingHack = false) => {
       if (url.startsWith('https://accounts.google.com')) {
         if (!this.chromelessUserAgent) {
@@ -322,7 +285,6 @@ export default class Service {
     }));
 
     this.webview.addEventListener('new-window', (event, url, frameName, options) => {
-<<<<<<< HEAD
       debug('new-window', event, url, frameName, options);
       if (event.disposition === 'foreground-tab') {
         ipcRenderer.send('open-browser-window', event, this.id);
@@ -334,14 +296,6 @@ export default class Service {
           options,
         });
       }
-=======
-      openWindow({
-        event,
-        url,
-        frameName,
-        options,
-      });
->>>>>>> 97cbc2d06ab4c8fa36619dbe71f8f466f5c68e76
     });
 
 
