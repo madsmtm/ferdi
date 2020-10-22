@@ -14,7 +14,7 @@ export default async function setupContextMenu(isSpellcheckEnabled, getDefaultSp
       props,
       isSpellcheckEnabled(),
       getDefaultSpellcheckerLanguage(),
-      getSpellcheckerLanguage()
+      getSpellcheckerLanguage(),
     );
   });
 }

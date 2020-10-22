@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { autorun, reaction } from 'mobx';
+import { autorun } from 'mobx';
 import { observer, inject } from 'mobx-react';
 import classnames from 'classnames';
 
@@ -46,10 +46,6 @@ export default @inject('stores', 'actions') @observer class ServiceView extends 
   autorunDisposer = null;
 
   forceRepaintTimeout = null;
-
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.autorunDisposer = autorun(() => {

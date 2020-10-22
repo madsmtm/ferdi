@@ -142,6 +142,7 @@ export default @inject('stores', 'actions') @observer class Sidebar extends Comp
                   todoActions.toggleTodosPanel();
                   this.updateToolTip();
                 }}
+                disblaed={isTodosServiceActive}
                 className={`sidebar__button sidebar__button--todos  ${todosStore.isTodosPanelVisible ? 'is-active' : ''}`}
                 data-tip={`${intl.formatMessage(todosToggleMessage)} (${ctrlKey}+T)`}
               >

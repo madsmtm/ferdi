@@ -275,11 +275,11 @@ export default class AppStore extends Store {
         electron: process.versions.electron,
         installedRecipes: this.stores.recipes.all.map(recipe => ({
           id: recipe.id,
-          version: recipe.version
+          version: recipe.version,
         })),
         devRecipes: this.stores.recipePreviews.dev.map(recipe => ({
           id: recipe.id,
-          version: recipe.version
+          version: recipe.version,
         })),
         services: this.stores.services.all.map(service => ({
           id: service.id,
@@ -292,9 +292,9 @@ export default class AppStore extends Store {
           isDarkModeEnabled: service.isDarkModeEnabled,
         })),
         messages: this.stores.globalError.messages,
-        workspaces: this.stores.workspaces.workspaces.map(workspace => ({ 
-          id: workspace.id, 
-          services: workspace.services 
+        workspaces: this.stores.workspaces.workspaces.map(workspace => ({
+          id: workspace.id,
+          services: workspace.services,
         })),
         windowSettings: readJsonSync(path.join(app.getPath('userData'), 'window-state.json')),
         settings,
@@ -447,8 +447,8 @@ export default class AppStore extends Store {
     } catch (ex) {
       console.log('Error while deleting service partition directory - ', ex);
     }
-    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({ 
-      serviceId: s.id 
+    await Promise.all(this.stores.services.all.map(s => this.actions.service.clearCache({
+      serviceId: s.id,
     })));
 
     await clearAppCache._promise;

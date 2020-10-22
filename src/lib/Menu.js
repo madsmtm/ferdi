@@ -902,9 +902,9 @@ export default class FranzMenu {
       }, {
         label: intl.formatMessage(menuItems.reloadTodos),
         accelerator: `${cmdKey}+Shift+Alt+R`,
-          click: () => {
-            this.actions.todos.reload();
-        }
+        click: () => {
+          this.actions.todos.reload();
+        },
       }, {
         type: 'separator',
       }, {

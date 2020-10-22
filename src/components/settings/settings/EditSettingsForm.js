@@ -626,7 +626,7 @@ export default @observer class EditSettingsForm extends Component {
                     buttonType="secondary"
                     label={intl.formatMessage(updateButtonLabelMessage)}
                     onClick={checkForUpdates}
-                    disabled={!automaticUpdates || isCheckingForUpdates || isUpdateAvailable}
+                    disabled={!automaticUpdates || isCheckingForUpdates || isUpdateAvailable || !isOnline}
                     loaded={!isCheckingForUpdates || !isUpdateAvailable}
                   />
                 )}
